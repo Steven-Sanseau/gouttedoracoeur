@@ -16,7 +16,7 @@ const Header = () => (
       bg="darkgray"
     >
       <Blob size="300" color="white" />
-      <Heading textAlign="center" fontSize={[8, 9]}>
+      <Heading textAlign="center" fontSize={[8, 9]} css={{ zIndex: 1100 }}>
         Goutte d'or à Coeur
       </Heading>
       <Text textAlign="center" fontSize={4} py={3}>
