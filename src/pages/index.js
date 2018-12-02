@@ -8,6 +8,7 @@ import Layout from '../layouts/layout'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import VideoList from '../components/VideoList'
+import Description from '../components/Description'
 
 const IndexPage = () => (
   <>
@@ -18,6 +19,7 @@ const IndexPage = () => (
         <meta name="description" content="Documentaire Goutte d'or à Coeur" />
       </Helmet>
       <Header />
+      <Description />
       <VideoList />
       <Footer />
     </Layout>
