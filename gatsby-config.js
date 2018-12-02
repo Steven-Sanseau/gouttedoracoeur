@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: "Goutte d'or à coeur",
+    siteUrl: 'https://www.gouttedoracoeur.fr',
+    author: 'Steven Sanseau',
+    description: "Site Internet du film Goutte d'or à Coeur.",
+    twitter: '@StevenSanseau',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
