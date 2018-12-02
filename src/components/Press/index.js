@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 import { Flex, Box, Heading, Text, Card } from 'rebass'
 
 const Press = () => (
@@ -19,6 +20,22 @@ const Press = () => (
             </Heading>
             <Text textAlign="justify" fontSize={3}>
               loremipsum
+              <StaticQuery
+                query={graphql`
+                  query {
+                    allFile(filter: { sourceInstanceName: { eq: "presse" } }) {
+                      edges {
+                        node {
+                          extension
+                          dir
+                          modifiedTime
+                        }
+                      }
+                    }
+                  }
+                `}
+                render={data => <Text>{data.allFile.edges.node.dir}</Text>}
+              />
             </Text>
           </Card>
         </Flex>
