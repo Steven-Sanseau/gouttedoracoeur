@@ -8,9 +8,9 @@ const Header = () => (
   <>
     <Card
       py={7}
+      m={-2}
       backgroundImage="url(https://source.unsplash.com/random/1024x768)"
       backgroundSize="cover"
-      borderRadius={8}
       color="white"
       bg="darkgray"
     >
