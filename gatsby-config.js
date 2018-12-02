@@ -40,5 +40,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.gouttedoracoeur.fr',
+        sitemap: 'https://www.gouttedoracoeur.fr/sitemap.xml',
+        policy: [{ userAgent: '*', disallow: '/' }],
+      },
+    },
   ],
 }
