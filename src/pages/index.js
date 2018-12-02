@@ -8,6 +8,7 @@ import Layout from '../layouts/layout'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import VideoList from '../components/VideoList'
+import Press from '../components/Press'
 import Description from '../components/Description'
 
 const IndexPage = () => (
@@ -21,6 +22,7 @@ const IndexPage = () => (
       <Header />
       <Description />
       <VideoList />
+      <Press />
       <Footer />
     </Layout>
   </>

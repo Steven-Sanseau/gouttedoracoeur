@@ -7,7 +7,8 @@ import PlayButton from '../Atomic/PlayButton'
 const Header = () => (
   <>
     <Card
-      py={7}
+      pb={8}
+      pt={7}
       m={-2}
       backgroundImage="url(https://source.unsplash.com/random/1024x768)"
       backgroundSize="cover"
@@ -15,7 +16,7 @@ const Header = () => (
       bg="darkgray"
     >
       <Blob size="120" color="white" />
-      <Heading textAlign="center" fontSize={[5, 6]}>
+      <Heading textAlign="center" fontSize={[5, 9]}>
         Goutte d'or à Coeur
       </Heading>
       <Text textAlign="center">
