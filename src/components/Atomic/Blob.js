@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Box } from 'rebass'
 import { themeGet } from 'styled-system'
 
 import BlobSvg from '-!svg-react-loader?name=BlobSvg!../../assets/Blob.svg'
