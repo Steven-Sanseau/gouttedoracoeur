@@ -15,15 +15,19 @@ const Header = () => (
       color="white"
       bg="darkgray"
     >
-      <Blob size="120" color="white" />
-      <Heading textAlign="center" fontSize={[5, 9]}>
+      <Blob size="300" color="white" />
+      <Heading textAlign="center" fontSize={[8, 9]}>
         Goutte d'or à Coeur
       </Heading>
-      <Text textAlign="center">
+      <Text textAlign="center" fontSize={4} py={3}>
         Un documentaire de Nathalie Perrin, Christine Ledésert et Daniel Bouy
       </Text>
-      <Text textAlign="center">Sur une idée originale de Daniel Bouy</Text>
-      <Text textAlign="center">2018</Text>
+      <Text textAlign="center" fontSize={3} py={2}>
+        Sur une idée originale de Daniel Bouy
+      </Text>
+      <Text textAlign="center" fontSize={3} py={2}>
+        2018
+      </Text>
       <Flex>
         <Box mx="auto">
           <PlayButton text="Voir le film" color="white" />

@@ -10,6 +10,9 @@ const Blob = styled(BlobSvg)`
   }
   width: ${props => props.size}px;
   z-index: 1000;
+  left: 23%;
+  top: 17%;
+  position: absolute;
   display: block;
   height: ${props => props.size}px;
 `
