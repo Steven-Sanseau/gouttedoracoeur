@@ -11,6 +11,7 @@ const Press = () => (
             mx="auto"
             bg="white"
             width={6 / 9}
+            mt={5}
             borderRadius={50}
             py={5}
             px={6}

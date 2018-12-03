@@ -63,9 +63,8 @@ const VideoList = () => (
         </Flex>
       </Box>
       <Hide xs sm md>
-        coucou
-        <Position top="0" left="-20rem">
-          <Blob size="500" color="blue" rotate="-45" />
+        <Position top="20rem" left="-10rem">
+          <Blob size="500" color="blue" rotate="45" />
         </Position>
       </Hide>
     </Flex>

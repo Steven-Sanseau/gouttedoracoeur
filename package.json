@@ -5,7 +5,7 @@
   "author": "Steven Sanséau <steven.sanseau@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.9.2",
-    "gatsby": "^2.0.53",
+    "gatsby": "^2.0.0-beta.54",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-flow": "^1.0.2",
     "gatsby-plugin-manifest": "^2.0.11",
@@ -19,6 +19,7 @@
     "gatsby-plugin-sitemap": "^2.0.3",
     "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-source-filesystem": "^2.0.10",
+    "gatsby-transformer-json": "^2.1.6",
     "gatsby-transformer-sharp": "^2.1.8",
     "hidden-styled": "^1.0.0-0",
     "react": "^16.6.3",
