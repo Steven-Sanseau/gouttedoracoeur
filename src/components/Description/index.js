@@ -1,12 +1,15 @@
 import React from 'react'
 import { Box, Flex, Heading, Text } from 'rebass'
 
+import Blob from '../Atomic/Blob'
+
 const Description = () => (
   <>
     <Flex flexWrap="wrap" mx={-2} py={6}>
       <Box width={[1, '80%']} mx="auto">
         <Flex flexWrap="wrap" alignItems="center" mx={-2}>
           <Box mx="auto" width={[1, 1 / 4]}>
+            <Blob color="green" size="68" />
             <Heading fontSize={6} fontFamily="menu">
               Un Decor
             </Heading>
@@ -17,7 +20,10 @@ const Description = () => (
           </Box>
           <Box mx="auto" width={[1, 1 / 4]}>
             <Heading fontSize={6} fontFamily="menu">
-              Un Personnage
+              Un
+              <Blob color="red" size="76" />
+              <br />
+              Personnage
             </Heading>
             <Text fontFamily="text" fontWeight="400">
               Christine Ledésert, directrice d'Accueil Goutte d'Or pendant 26
@@ -25,6 +31,8 @@ const Description = () => (
             </Text>
           </Box>
           <Box mx="auto" width={[1, 1 / 4]}>
+            <Blob color="blue" size="60" />
+            <Blob color="blue" size="30" />
             <Heading fontSize={6} fontFamily="menu">
               Une Histoire
             </Heading>

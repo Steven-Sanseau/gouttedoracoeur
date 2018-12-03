@@ -5,15 +5,11 @@ import BlobSvg from '-!svg-react-loader?name=BlobSvg!../../assets/Blob.svg'
 
 const Blob = styled(BlobSvg)`
   #blob-color {
-    fill: ${themeGet('colors.gold')};
+    fill: ${props => themeGet(`colors.${props.color}`)};
   }
   width: ${props => props.size}px;
   z-index: 800;
   opacity: 0.4;
-  left: 23%;
-  top: 17%;
-  position: absolute;
-  display: block;
   height: ${props => props.size}px;
 `
 

@@ -12,9 +12,9 @@ const theme = {
     bold: 700,
   },
   colors: {
-    red: '#FCDBE0',
+    red: '#F7A5B2',
     blue: '#B1C0F5',
-    green: '#AECEBC',
+    green: '#358457',
     background_blue: '#DDEDED',
     grey: '#1F1B15',
     purple: '#9895D4',
