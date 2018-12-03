@@ -1,20 +1,13 @@
 import React from 'react'
-import { Text, Heading, Card, Flex, Box } from 'rebass'
+import { Text, Heading, Flex, Box } from 'rebass'
 
 import Blob from '../Atomic/Blob'
 import PlayButton from '../Atomic/PlayButton'
+import HeaderBackground from './HeaderBackground'
 
 const Header = () => (
   <>
-    <Card
-      pb={8}
-      pt={7}
-      m={-2}
-      backgroundImage="url(https://source.unsplash.com/random/1024x768)"
-      backgroundSize="cover"
-      color="white"
-      bg="blue_filter"
-    >
+    <HeaderBackground pb={8} pt={7} m={-2} color="white">
       <Blob size="300" color="white" />
       <Heading
         fontFamily="menu"
@@ -30,6 +23,7 @@ const Header = () => (
         fontWeight="700"
         textAlign="center"
         fontSize={3}
+        css={{ letterSpacing: -0.45 }}
         py={3}
       >
         Un documentaire de Nathalie Perrin, Christine Ledésert et Daniel Bouy
@@ -39,6 +33,7 @@ const Header = () => (
         fontWeight="700"
         textAlign="center"
         fontSize={3}
+        css={{ letterSpacing: -0.45 }}
         py={2}
       >
         Sur une idée originale de Daniel Bouy
@@ -48,6 +43,7 @@ const Header = () => (
         fontWeight="700"
         textAlign="center"
         fontSize={3}
+        css={{ letterSpacing: -0.45 }}
         py={2}
       >
         2018
@@ -57,7 +53,7 @@ const Header = () => (
           <PlayButton ontFamily="submenu" text="Voir le film" color="white" />
         </Box>
       </Flex>
-    </Card>
+    </HeaderBackground>
   </>
 )
 

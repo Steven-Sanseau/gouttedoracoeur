@@ -19,6 +19,7 @@ const theme = {
     grey: '#1F1B15',
     purple: '#9895D4',
     blue_filter: '#99C9C9',
+    gray_filter: '#201106',
     gold: '#F4A62D',
   },
   radii: [0, 2, 4],

@@ -9,7 +9,9 @@ const Description = () => (
       <Box width={[1, '80%']} mx="auto">
         <Flex flexWrap="wrap" alignItems="center" mx={-2}>
           <Box mx="auto" width={[1, 1 / 4]}>
-            <Blob color="green" size="68" />
+            <Box ml={6}>
+              <Blob color="green" size="68" />
+            </Box>
             <Heading fontSize={6} fontFamily="menu">
               Un Decor
             </Heading>

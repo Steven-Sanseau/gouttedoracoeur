@@ -26,6 +26,7 @@ const VideoList = () => (
               fontSize={6}
               fontFamily="menu"
               fontWeight="900"
+              css={{ letterSpacing: -1.25 }}
             >
               Les bonus Vidéos
             </Heading>
