@@ -2,10 +2,11 @@ const theme = {
   breakpoints: ['32em', '48em', '64em', '80em'],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
-    sans: 'Circular',
-    text: 'Roboto',
+    menu: 'Palanquin Dark',
+    submenu: 'Palanquin SemiBold',
+    text: 'Palanquin',
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72, 96],
+  fontSizes: [12, 14, 16, 17, 20, 30, 50, 100],
   weights: {
     normal: 300,
     bold: 700,
@@ -17,7 +18,8 @@ const theme = {
     background_blue: '#DDEDED',
     grey: '#1F1B15',
     purple: '#9895D4',
-    gold: '#A79764',
+    blue_filter: '#99C9C9',
+    gold: '#F4A62D',
   },
   radii: [0, 2, 4],
 }

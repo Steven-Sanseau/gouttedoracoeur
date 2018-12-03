@@ -59,5 +59,20 @@ module.exports = {
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Palanquin`,
+            variants: [`400`, `600`, `700`],
+          },
+          {
+            family: `Palanquin Dark`,
+            variants: [`700`],
+          },
+        ],
+      },
+    },
   ],
 }

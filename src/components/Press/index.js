@@ -15,10 +15,21 @@ const Press = () => (
             py={5}
             px={6}
           >
-            <Heading textAlign="center" fontSize={7} mb={4}>
+            <Heading
+              textAlign="center"
+              fontFamily="menu"
+              fontWeight="900"
+              fontSize={6}
+              mb={4}
+            >
               Communiqué de Presse
             </Heading>
-            <Text textAlign="justify" fontSize={3}>
+            <Text
+              textAlign="justify"
+              fontFamily="text"
+              fontWeight="500"
+              fontSize={3}
+            >
               loremipsum
               {/* <StaticQuery
                 query={graphql`

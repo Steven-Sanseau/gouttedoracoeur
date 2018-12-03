@@ -21,14 +21,21 @@ const VideoList = () => (
       <Box bg={'background_blue'} width={1} px={[1, 7]} py={[1, 5]}>
         <Flex>
           <Box width={[1]} mx="auto" pb={[1, 5]}>
-            <Heading textAlign="center" fontSize={7}>
+            <Heading
+              textAlign="center"
+              fontSize={6}
+              fontFamily="menu"
+              fontWeight="900"
+            >
               Les bonus Vidéos
             </Heading>
           </Box>
         </Flex>
         <Flex alignItems="center" flexWrap="wrap">
           <Box width={1} my={2}>
-            <Heading fontSize={5}>Les rencontres avec...</Heading>
+            <Heading fontSize={5} fontFamily="menu">
+              Les rencontres avec...
+            </Heading>
           </Box>
           <Box width={[1, 1, 1, 1, 1 / 2]}>
             <Player title="...Fatoumata, habitante du quartier" video="" />
@@ -45,7 +52,9 @@ const VideoList = () => (
         </Flex>
         <Flex alignItems="center" flexWrap="wrap">
           <Box width={1} mt={6} mb={3}>
-            <Heading fontSize={5}>Les moments...</Heading>
+            <Heading fontSize={5} fontFamily="menu">
+              Les moments...
+            </Heading>
           </Box>
           <Box width={[1, 1, 1, 1, 1 / 2]}>
             <Player title="...Fatoumata, habitante du quartier" video="" />

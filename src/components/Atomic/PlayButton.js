@@ -19,7 +19,12 @@ const PlayButton = props => (
     <Box textAlign="center" py={4}>
       <PlayColored color={props.color} />
       {props.text && (
-        <Text textAlign="center" fontSize={4}>
+        <Text
+          textAlign="center"
+          fontFamily="text"
+          fontWeight="900"
+          fontSize={3}
+        >
           {props.text}
         </Text>
       )}

@@ -8,7 +8,8 @@ const Blob = styled(BlobSvg)`
     fill: ${themeGet('colors.gold')};
   }
   width: ${props => props.size}px;
-  z-index: 1000;
+  z-index: 800;
+  opacity: 0.4;
   left: 23%;
   top: 17%;
   position: absolute;
