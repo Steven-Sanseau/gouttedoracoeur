@@ -14,6 +14,11 @@ const Donators = props => (
   <>
     <Flex mx={-2}>
       <Box width={1} bg="white">
+        <Hide xs sm md>
+          <Position top="-6rem" left="-20rem">
+            <Blob size="500" color="red" rotate="-45" />
+          </Position>
+        </Hide>
         <Flex>
           <Box width={6 / 9} mx="auto" p={3}>
             <Heading fontFamily="menu" fontSize={5} textAlign="center" pb={4}>
@@ -30,11 +35,6 @@ const Donators = props => (
             </Flex>
           </Box>
         </Flex>
-        <Hide xs sm md>
-          <Position top="1rem" left="-20rem">
-            <Blob size="500" color="red" rotate="-45" />
-          </Position>
-        </Hide>
       </Box>
     </Flex>
   </>
