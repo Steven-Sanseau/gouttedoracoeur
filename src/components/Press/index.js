@@ -1,7 +1,6 @@
 import React from 'react'
 // import { StaticQuery, graphql } from 'gatsby'
 import { Flex, Box, Heading, Text, Card } from 'rebass'
-import { SSL_OP_NO_TLSv1_1 } from 'constants'
 
 const Press = () => (
   <>

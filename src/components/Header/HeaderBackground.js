@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { themeGet } from 'styled-system'
 import { Card } from 'rebass'
 
 const HeaderBackground = styled(Card)`

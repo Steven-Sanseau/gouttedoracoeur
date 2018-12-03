@@ -2,13 +2,16 @@ import React from 'react'
 import { Text, Heading, Flex, Box } from 'rebass'
 
 import Blob from '../Atomic/Blob'
+import Position from '../Atomic/Position'
 import PlayButton from '../Atomic/PlayButton'
 import HeaderBackground from './HeaderBackground'
 
 const Header = () => (
   <>
-    <HeaderBackground pb={8} pt={7} m={-2} color="white">
-      <Blob size="300" color="white" />
+    <HeaderBackground pb={7} pt={7} m={-2} color="white">
+      <Position left="27rem" top="-7rem">
+        <Blob size="300" color="gold" />
+      </Position>
       <Heading
         fontFamily="menu"
         textAlign="center"

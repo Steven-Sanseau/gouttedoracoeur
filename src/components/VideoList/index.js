@@ -1,19 +1,10 @@
 import React from 'react'
 import { Flex, Box, Heading } from 'rebass'
-import styled from 'styled-components'
 import Hide from 'hidden-styled'
 
-import BlueRoundSvg from '-!svg-react-loader?name=BlueRoundSvg!../../assets/BlueRound.svg'
-
 import Player from './Player'
-
-const BlueRound = styled(BlueRoundSvg)`
-  position: absolute;
-  right: -9%;
-  top: 230%;
-  height: 50%;
-  z-index: 2;
-`
+import Blob from '../Atomic/Blob'
+import Position from '../Atomic/Position'
 
 const VideoList = () => (
   <>
@@ -72,7 +63,10 @@ const VideoList = () => (
         </Flex>
       </Box>
       <Hide xs sm md>
-        <BlueRound />
+        coucou
+        <Position top="0" left="-20rem">
+          <Blob size="500" color="blue" rotate="-45" />
+        </Position>
       </Hide>
     </Flex>
   </>

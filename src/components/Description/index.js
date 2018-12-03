@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Flex, Heading, Text } from 'rebass'
 
 import Blob from '../Atomic/Blob'
+import Position from '../Atomic/Position'
 
 const Description = () => (
   <>
@@ -9,9 +10,9 @@ const Description = () => (
       <Box width={[1, '80%']} mx="auto">
         <Flex flexWrap="wrap" alignItems="center" mx={-2}>
           <Box mx="auto" width={[1, 1 / 4]}>
-            <Box ml={6}>
+            <Position>
               <Blob color="green" size="68" />
-            </Box>
+            </Position>
             <Heading fontSize={6} fontFamily="menu">
               Un Decor
             </Heading>
@@ -23,7 +24,9 @@ const Description = () => (
           <Box mx="auto" width={[1, 1 / 4]}>
             <Heading fontSize={6} fontFamily="menu">
               Un
-              <Blob color="red" size="76" />
+              <Position>
+                <Blob color="red" size="76" />
+              </Position>
               <br />
               Personnage
             </Heading>
@@ -33,8 +36,11 @@ const Description = () => (
             </Text>
           </Box>
           <Box mx="auto" width={[1, 1 / 4]}>
-            <Blob color="blue" size="60" />
-            <Blob color="blue" size="30" />
+            <Position>
+              <Blob color="blue" size="60" />
+              <Blob color="blue" size="30" />
+            </Position>
+
             <Heading fontSize={6} fontFamily="menu">
               Une Histoire
             </Heading>
