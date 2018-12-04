@@ -1,8 +1,7 @@
 import React from 'react'
-// import { StaticQuery, graphql } from 'gatsby'
 import { Flex, Box, Heading, Text, Card } from 'rebass'
 
-const Press = () => (
+const Press = props => (
   <>
     <Flex mx={-2} flexWrap="wrap">
       <Box bg={'background_blue'} width={1}>
@@ -33,27 +32,9 @@ const Press = () => (
               fontSize={3}
             >
               loremipsum
-              {/* <StaticQuery
-                query={graphql`
-                  query {
-                    allFile(
-                      filter: { sourceInstanceName: { eq: "presse.pdf" } }
-                    ) {
-                      edges {
-                        node {
-                          extension
-                          dir
-                          modifiedTime
-                        }
-                      }
-                    }
-                  }
-                `}
-                render={data => {
-                  console.log(data)
-                }}
-              /> */}
             </Text>
+
+            <a href={props.presseFile}>Télécharger le communiqué</a>
           </Card>
         </Flex>
       </Box>

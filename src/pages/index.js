@@ -22,9 +22,8 @@ const IndexPage = ({ data }) => (
       <Header />
       <Description />
       <VideoList />
-      <Donators donators={data.allFile.edges[0].node.childrenDonatorsJson} />
-
-      <Press />
+      <Donators donators={data.donators.edges[0].node.childrenDonatorsJson} />
+      <Press presseFile={data.pressKitFile.edges[0].node.publicURL} />
       <Footer />
     </Layout>
   </>
@@ -32,7 +31,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   query DonatorQuery {
-    allFile(
+    donators: allFile(
       filter: { name: { eq: "donators" }, sourceInstanceName: { eq: "data" } }
     ) {
       edges {
@@ -41,6 +40,16 @@ export const query = graphql`
             name
             firstName
           }
+        }
+      }
+    }
+    pressKitFile: allFile(
+      filter: { name: { eq: "presse" }, sourceInstanceName: { eq: "data" } }
+    ) {
+      edges {
+        node {
+          name
+          publicURL
         }
       }
     }
