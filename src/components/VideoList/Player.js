@@ -1,10 +1,16 @@
 import React from 'react'
+import { Box, Text } from 'rebass'
+import styled from 'styled-components'
+
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import { Box, Text } from 'rebass'
+
+const PlayerWrapper = styled(Box)`
+  cursor: pointer;
+`
 
 const Player = props => (
-  <Box width={500}>
+  <PlayerWrapper width={500} onClick={props.selectVideo}>
     <Text fontSize={3} fontFamily="text" fontWeight="600" mb={3}>
       {props.title}
     </Text>
@@ -25,7 +31,7 @@ const Player = props => (
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
       )}
     />
-  </Box>
+  </PlayerWrapper>
 )
 
 export default Player

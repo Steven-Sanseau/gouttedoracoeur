@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, Heading, Flex, Box } from 'rebass'
-// import anime from 'animejs'
+import anime from 'animejs'
 
 import Blob from '../Atomic/Blob'
 import Position from '../Atomic/Position'
@@ -17,13 +17,19 @@ export default class Header extends Component {
       fullscreenMode: false,
     }
     this.fullScreenRef = React.createRef()
+    this.playButtonRef = React.createRef()
   }
 
   autoPlayMovie = () => {
     this.setState({ autoPlayMovie: true })
   }
 
-  playMovie = () => {
+  playMovie = e => {
+    anime({
+      targets: e.currentTarget,
+      width: '20rem',
+      height: '20rem',
+    })
     this.setState({ autoPlayMovie: false, fullscreenMode: true })
   }
 
@@ -89,20 +95,22 @@ export default class Header extends Component {
           >
             2018
           </Text>
-          {!fullscreenMode && (
-            <Flex>
-              <Box mx="auto">
-                <PlayButton
-                  ontFamily="submenu"
-                  text="Voir le film"
-                  color="white"
-                  autoPlayMovie={this.autoPlayMovie}
-                  playMovie={this.playMovie}
-                  stopMovie={this.stopMovie}
-                />
-              </Box>
-            </Flex>
-          )}
+          {/* {!fullscreenMode && ( */}
+          <Flex>
+            <Box mx="auto">
+              <PlayButton
+                fontFamily="submenu"
+                text="Voir le film"
+                color="white"
+                size={5}
+                playButtonRef={this.playButtonRef}
+                autoPlayMovie={this.autoPlayMovie}
+                playMovie={this.playMovie}
+                stopMovie={this.stopMovie}
+              />
+            </Box>
+          </Flex>
+          {/* )} */}
         </HeaderBackground>
       </div>
     )

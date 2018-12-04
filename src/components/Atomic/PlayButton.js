@@ -6,13 +6,15 @@ import styled from 'styled-components'
 import Play from '-!svg-react-loader?name=Play!../../assets/Play.svg'
 
 const PlayColored = styled(Play)`
-  #play-button {
+  .play-button {
     fill: ${props => themeGet(`colors.${props.color}`)};
   }
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  width: 5rem;
+
+  width: ${props => props.size}rem;
+  height: ${props => props.size}rem;
 `
 
 const PlayButtonWrapper = styled.div`
@@ -21,12 +23,16 @@ const PlayButtonWrapper = styled.div`
 
 const PlayButton = props => (
   <PlayButtonWrapper
-    onClick={props.playMovie}
+    onClick={e => props.playMovie(e)}
     onMouseEnter={props.autoPlayMovie}
     onMouseLeave={props.stopMovie}
   >
     <Box textAlign="center" py={4}>
-      <PlayColored color={props.color} />
+      <PlayColored
+        size={props.size}
+        color={props.color}
+        ref={props.playButtonRef}
+      />
       {props.text && (
         <Text
           textAlign="center"
@@ -40,5 +46,9 @@ const PlayButton = props => (
     </Box>
   </PlayButtonWrapper>
 )
+
+PlayButton.defaultProps = {
+  size: '5',
+}
 
 export default PlayButton
