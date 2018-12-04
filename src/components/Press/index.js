@@ -34,7 +34,14 @@ const Press = props => (
               loremipsum
             </Text>
 
-            <a href={props.presseFile}>Télécharger le communiqué</a>
+            <Text
+              textAlign="justify"
+              fontFamily="text"
+              fontWeight="500"
+              fontSize={3}
+            >
+              <a href={props.presseFile}>Télécharger le communiqué</a>
+            </Text>
           </Card>
         </Flex>
       </Box>
