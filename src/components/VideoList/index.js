@@ -19,7 +19,7 @@ const VideoList = () => (
               fontWeight="900"
               css={{ letterSpacing: -1.25 }}
             >
-              Les bonus Vidéos
+              Les bonus vidéos
             </Heading>
           </Box>
         </Flex>

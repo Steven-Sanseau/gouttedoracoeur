@@ -15,8 +15,16 @@ const PlayColored = styled(Play)`
   width: 5rem;
 `
 
+const PlayButtonWrapper = styled.div`
+  cursor: pointer;
+`
+
 const PlayButton = props => (
-  <>
+  <PlayButtonWrapper
+    onClick={props.playMovie}
+    onMouseEnter={props.autoPlayMovie}
+    onMouseLeave={props.stopMovie}
+  >
     <Box textAlign="center" py={4}>
       <PlayColored color={props.color} />
       {props.text && (
@@ -30,7 +38,7 @@ const PlayButton = props => (
         </Text>
       )}
     </Box>
-  </>
+  </PlayButtonWrapper>
 )
 
 export default PlayButton
