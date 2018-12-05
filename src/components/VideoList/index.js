@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import { Flex, Box, Heading, Text } from 'rebass'
 import Hide from 'hidden-styled'
 
 import Player from './Player'
 import Blob from '../Atomic/Blob'
 import Position from '../Atomic/Position'
+import VideoFull from './VideoFull'
+
+const ReturnBtn = styled(Text)`
+  cursor: pointer;
+`
 
 export default class VideoList extends Component {
   constructor(props) {
@@ -96,11 +102,17 @@ export default class VideoList extends Component {
             )}
             {videoFull && (
               <Flex>
-                <Box>
-                  <Text onClick={this.closeFull} fontFamily="text" fontSize={3}>
+                <Box width={1}>
+                  <ReturnBtn
+                    onClick={this.closeFull}
+                    fontFamily="text"
+                    fontSize={3}
+                  >
                     {'<'} Retour aux bonus
-                  </Text>
-                  <Text>Video</Text>
+                  </ReturnBtn>
+                  <Flex>
+                    <VideoFull onClose={this.closeFull}>Video</VideoFull>
+                  </Flex>
                 </Box>
               </Flex>
             )}
