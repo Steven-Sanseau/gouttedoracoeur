@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Flex, Box, Heading, Text } from 'rebass'
+import { Flex, Box, Heading, Text, Card } from 'rebass'
 import Hide from 'hidden-styled'
 
+import FlexOver from '../Atomic/FlexOver'
 import Player from './Player'
 import Blob from '../Atomic/Blob'
 import Position from '../Atomic/Position'
@@ -15,25 +16,23 @@ const ReturnBtn = styled(Text)`
 export default class VideoList extends Component {
   constructor(props) {
     super(props)
-    this.state = { videoSelected: null, videoFull: false }
+    this.state = { videoSelected: {}, videoFull: false }
   }
 
   selectVideo = elem => {
-    console.log(elem)
-    // this.setState({ videoSelected: id, videoFull: true })
+    this.setState({ videoSelected: elem, videoFull: true })
   }
 
   closeFull = () => {
-    this.setState({ videoSelected: null, videoFull: false })
+    this.setState({ videoSelected: {}, videoFull: false })
   }
 
   render() {
     const { videoFull, videoSelected } = this.state
     const { videoList } = this.props
-    console.log(videoList)
     return (
       <>
-        <Flex mx={-2} flexWrap="wrap">
+        <FlexOver mx={-2} flexWrap="wrap">
           <Box bg={'background_blue'} width={1} px={[1, 7]} py={[1, 5]}>
             <Flex>
               <Box width={[1]} mx="auto" pb={[1, 5]}>
@@ -63,7 +62,7 @@ export default class VideoList extends Component {
                     </Heading>
                   </Box>
                   {videoList.sequences.map(video => (
-                    <Box width={[1, 1 / 2]}>
+                    <Box key={video.link + video.title} width={[1, 1 / 2]}>
                       <Player
                         title={video.title}
                         video={video.link}
@@ -72,13 +71,130 @@ export default class VideoList extends Component {
                       />
                     </Box>
                   ))}
-                </Flex>
-                <Flex alignItems="center" flexWrap="wrap">
-                  <Box width={1} mt={6} mb={3}>
-                    <Heading fontSize={5} fontFamily="menu">
-                      Les moments...
+                  <Card
+                    mx="auto"
+                    bg="white"
+                    width={[0.9, 8 / 9]}
+                    my={5}
+                    borderRadius={[30, 50]}
+                    py={[3, 5]}
+                    px={[3, 6]}
+                  >
+                    <Heading
+                      textAlign="center"
+                      fontFamily="menu"
+                      fontWeight="900"
+                      fontSize={[5, 6]}
+                      css={{ letterSpacing: -1.25 }}
+                      mb={[2, 4]}
+                    >
+                      Au coeur de la goutte d’or…
+                    </Heading>
+                    <Text
+                      textAlign="justify"
+                      fontFamily="text"
+                      fontWeight="400"
+                      fontSize={3}
+                    >
+                      Mai 2017 : Daniel Bouy, réalisateur de documentaires, fait
+                      la connaissance de Christine Ledésert. <br />
+                      <br />
+                      Christine est alors directrice depuis 26 ans du Centre
+                      social associatif Accueil Goutte d’Or (AGO) situé au cœur
+                      du quartier de la Goutte d’Or dans le XVIIIème
+                      arrondissement de Paris. <br />
+                      <br />
+                      Elle est une figure du quartier. Certains la surnomment
+                      même la «maman du quartier» tant elle a aidé, accompagné,
+                      soutenu des milliers de personnes dans leurs vies souvent
+                      chaotiques… <br />
+                      <br />
+                      Mais Christine doit partir à la retraite 6 mois plus tard…
+                      <br />
+                      <br />
+                      Daniel décide de filmer les derniers mois de sa carrière
+                      professionnelle, de filmer le quotidien du centre social,
+                      de filmer des évènements du quartier de la Goutte d’Or…
+                      <br />
+                      <br />
+                      Nathalie, monteuse de documentaires et de reportages, fera
+                      dialoguer les images de Daniel avec des textes écrits par
+                      Christine inspirés par sa pratique professionnelle et
+                      l’expérience humaine exceptionnelle qu’elle vient de
+                      vivre. <br />
+                      <br />
+                    </Text>
+
+                    <Text
+                      textAlign="justify"
+                      fontFamily="text"
+                      fontWeight="700"
+                      fontSize={3}
+                    >
+                      En 64 minutes, ce documentaire nous fait partager les
+                      inquiétudes et les espoirs, les rires et les pleurs, les
+                      épreuves et les fêtes des salariés, bénévoles et usagers
+                      d’Accueil Goutte d’Or.
+                    </Text>
+                  </Card>
+                  <Box width={1} my={2}>
+                    <Heading
+                      fontSize={[4, 5]}
+                      lineHeight={[1, 3]}
+                      fontFamily="menu"
+                    >
+                      Les rencontres de Christine avec des habitants, des
+                      bénévoles et des professionnels du quartier
                     </Heading>
                   </Box>
+                  {videoList.meeting.map(video => (
+                    <Box key={video.link + video.title} width={[1, 1 / 2]}>
+                      <Player
+                        title={video.title}
+                        video={video.link}
+                        description={video.description}
+                        selectVideo={() => this.selectVideo(video)}
+                      />
+                    </Box>
+                  ))}
+                  <Card
+                    mx="auto"
+                    bg="white"
+                    width={[0.9, 8 / 9]}
+                    my={5}
+                    borderRadius={[30, 50]}
+                    py={[3, 5]}
+                    px={[3, 6]}
+                  >
+                    <Text
+                      textAlign="center"
+                      fontFamily="text"
+                      fontWeight="700"
+                      fontSize={5}
+                    >
+                      Partagez la bande-annonce du film sur les réseaux sociaux
+                      !
+                    </Text>
+                  </Card>
+                  <Box width={1} my={2}>
+                    <Heading
+                      fontSize={[4, 5]}
+                      lineHeight={[1, 3]}
+                      fontFamily="menu"
+                    >
+                      Ils parlent de Christine…
+                    </Heading>
+                  </Box>
+                  {videoList.talk.map(video => (
+                    <Box key={video.link + video.title} width={[1, 1 / 2]}>
+                      <Player
+                        title={video.title}
+                        video={video.link}
+                        description={video.description}
+                        selectVideo={() => this.selectVideo(video)}
+                      />
+                    </Box>
+                  ))}
                 </Flex>
               </>
             )}
@@ -93,7 +209,7 @@ export default class VideoList extends Component {
                     {'<'} Retour aux bonus
                   </ReturnBtn>
                   <Flex>
-                    <VideoFull onClose={this.closeFull} videoId={videoSelected}>
+                    <VideoFull onClose={this.closeFull} video={videoSelected}>
                       Video
                     </VideoFull>
                   </Flex>
@@ -106,7 +222,7 @@ export default class VideoList extends Component {
               <Blob size="500" color="blue" rotate="45" />
             </Position>
           </Hide>
-        </Flex>
+        </FlexOver>
       </>
     )
   }

@@ -21,9 +21,20 @@ const Donators = props => (
         </Hide>
         <Flex>
           <Box width={6 / 9} mx="auto" p={3}>
-            <Heading fontFamily="menu" fontSize={5} textAlign="center" pb={4}>
-              Merci a nos donateurs
+            <Heading fontFamily="menu" fontSize={5} textAlign="center" py={4}>
+              Remerciements
             </Heading>
+            <Text
+              fontFamily="text"
+              fontSize={3}
+              textAlign="justify"
+              fontWeight="500"
+              mb={4}
+            >
+              La production du documentaire «Goutte d’Or à coeur» et la
+              réalisation de ce site internet n’auraient pas été possible sans
+              la contribution financière de:
+            </Text>
             <Flex flexWrap="wrap">
               {props.donators.map(donator => (
                 <Box width={[1, 1 / 5]} key={donator.name + donator.firstName}>
@@ -33,6 +44,9 @@ const Donators = props => (
                 </Box>
               ))}
             </Flex>
+            <Text fontFamily="text" fontSize={3} fontWeight="500" my={4}>
+              Un grand merci à nos donateurs !
+            </Text>
           </Box>
         </Flex>
       </Box>

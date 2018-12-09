@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Text, Heading, Flex, Box } from 'rebass'
 import anime from 'animejs'
 
+import FlexOver from '../Atomic/FlexOver'
 import Blob from '../Atomic/Blob'
 import Position from '../Atomic/Position'
 import PlayButton from '../Atomic/PlayButton'
@@ -52,9 +53,11 @@ export default class Header extends Component {
           />
         )}
         <HeaderBackground pb={7} pt={7} m={-2} color="white">
-          <Position left="27rem" top="-7rem">
-            <Blob size="300" color="gold" />
-          </Position>
+          <FlexOver>
+            <Position left="27rem" top="-7rem">
+              <Blob size="300" color="gold" />
+            </Position>
+          </FlexOver>
           <Heading
             fontFamily="menu"
             textAlign="center"

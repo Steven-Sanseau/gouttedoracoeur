@@ -4,6 +4,9 @@ import { ThemeProvider, createGlobalStyle } from 'styled-components'
 import theme from './theme'
 
 createGlobalStyle`
+ body{
+   overflow: hidden;
+ }
  `
 
 const Layout = ({ children }) => (

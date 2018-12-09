@@ -8,7 +8,6 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import VideoList from '../components/VideoList'
 import Donators from '../components/Donators'
-import Press from '../components/Press'
 import Description from '../components/Description'
 
 const IndexPage = ({ data }) => (
@@ -23,7 +22,6 @@ const IndexPage = ({ data }) => (
       <Description />
       <VideoList videoList={data.videoList.edges[0].node.childDataJson} />
       <Donators donators={data.donators.edges[0].node.childrenDonatorsJson} />
-      <Press presseFile={data.pressKitFile.edges[0].node.publicURL} />
       <Footer />
     </Layout>
   </>
@@ -68,16 +66,6 @@ export const query = graphql`
               description
             }
           }
-        }
-      }
-    }
-    pressKitFile: allFile(
-      filter: { name: { eq: "presse" }, sourceInstanceName: { eq: "data" } }
-    ) {
-      edges {
-        node {
-          name
-          publicURL
         }
       }
     }

@@ -25,11 +25,12 @@ export default class VideoFull extends Component {
   render() {
     const optionsYoutubePlayer = {
       height: 500,
-      width: 500,
+      width: 750,
       playerVars: {
         autoplay: 1,
       },
     }
+    const { video } = this.props
     return (
       <Box mx="auto" width={[1, 5 / 9]}>
         <Heading
@@ -40,16 +41,16 @@ export default class VideoFull extends Component {
           mb={4}
           css={{ letterSpacing: -1.25 }}
         >
-          Vidéo Full
+          {video.title}
         </Heading>
         <YouTube
-          videoId={this.props.videoId}
+          videoId={video.link}
           opts={optionsYoutubePlayer}
           onReady={this.play}
           onEnd={this.props.onClose}
         />
         <Text mt={3} fontFamily="text" textAlign="justify" fontSize={3}>
-          Description de la video
+          {video.description}
         </Text>
       </Box>
     )

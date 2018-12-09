@@ -10,7 +10,12 @@ const PlayerWrapper = styled(Box)`
 `
 
 const Player = props => (
-  <PlayerWrapper width={500} onClick={props.selectVideo}>
+  <PlayerWrapper
+    width={[0.95, 0.7]}
+    onClick={props.selectVideo}
+    my={3}
+    mx={'auto'}
+  >
     <Text fontSize={3} fontFamily="text" fontWeight="600" mb={3}>
       {props.title}
     </Text>
@@ -30,7 +35,14 @@ const Player = props => (
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
       )}
     />
-    <Text fontSize={3} fontFamily="text" fontWeight="400" mt={2}>
+    <Text
+      fontSize={3}
+      fontFamily="text"
+      fontWeight="400"
+      textAlign="justify"
+      lineHeight="20px"
+      mt={2}
+    >
       {props.description}
     </Text>
   </PlayerWrapper>
