@@ -7,35 +7,35 @@ import Position from '../Atomic/Position'
 const Description = () => (
   <>
     <Flex flexWrap="wrap" mx={-2} py={6}>
-      <Box width={[1, '80%']} mx="auto">
+      <Box width={[0.8, '80%']} mx="auto">
         <Flex flexWrap="wrap" alignItems="center" mx={-2}>
           <Box mx="auto" width={[1, 1 / 4]}>
             <Position top="-3rem" left="8rem">
               <Blob color="green" size="68" />
             </Position>
             <Heading fontSize={6} fontFamily="menu">
-              Un Decor
+              Un décor
             </Heading>
             <Text fontFamily="text" fontWeight="400">
               Le quartier de la goutte d'or dans le 18ème arrondissement de
               Paris, son centre social associatif Accueil Goutte d'or.
             </Text>
           </Box>
-          <Box mx="auto" width={[1, 1 / 4]}>
+          <Box mx="auto" mt={[4, 0]} width={[1, 1 / 4]}>
             <Heading fontSize={6} fontFamily="menu">
               Un
-              <Position top="-3rem" left="8rem">
+              <Position top="-5rem" marginBottom="-7rem" left="8rem">
                 <Blob color="red" size="76" />
               </Position>
               <br />
-              Personnage
+              personnage
             </Heading>
             <Text fontFamily="text" fontWeight="400">
               Christine Ledésert, directrice d'Accueil Goutte d'Or pendant 26
               ans.
             </Text>
           </Box>
-          <Box mx="auto" width={[1, 1 / 4]}>
+          <Box mx="auto" mt={[6, 0]} width={[1, 1 / 4]}>
             <Position top="-3rem" left="4rem">
               <Blob color="blue" size="60" />
             </Position>
@@ -44,7 +44,7 @@ const Description = () => (
             </Position>
 
             <Heading fontSize={6} fontFamily="menu">
-              Une Histoire
+              Une histoire
             </Heading>
             <Text fontFamily="text" fontWeight="400">
               A quelques jours de sa retraite profesionelle, Christine partage

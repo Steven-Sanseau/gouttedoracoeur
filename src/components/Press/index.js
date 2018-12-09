@@ -9,19 +9,19 @@ const Press = props => (
           <Card
             mx="auto"
             bg="white"
-            width={6 / 9}
+            width={[0.9, 6 / 9]}
             mt={5}
-            borderRadius={50}
-            py={5}
-            px={6}
+            borderRadius={[30, 50]}
+            py={[3, 5]}
+            px={[3, 6]}
           >
             <Heading
               textAlign="center"
               fontFamily="menu"
               fontWeight="900"
-              fontSize={6}
+              fontSize={[5, 6]}
               css={{ letterSpacing: -1.25 }}
-              mb={4}
+              mb={[2, 4]}
             >
               Communiqué de Presse
             </Heading>

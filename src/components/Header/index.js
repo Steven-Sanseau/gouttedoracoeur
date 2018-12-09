@@ -72,7 +72,7 @@ export default class Header extends Component {
             css={{ letterSpacing: -0.45 }}
             py={3}
           >
-            Un documentaire de Nathalie Perrin, Christine Ledésert et Daniel
+            Un documentaire de Christine Ledésert, Nathalie Perrin et Daniel
             Bouy
           </Text>
           <Text

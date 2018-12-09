@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Flex, Box, Heading, Text } from 'rebass'
+import { Box, Heading, Text } from 'rebass'
 import YouTube from 'react-youtube'
 
 export default class VideoFull extends Component {
@@ -43,7 +43,7 @@ export default class VideoFull extends Component {
           Vidéo Full
         </Heading>
         <YouTube
-          videoId={'poHkdc2yYek'}
+          videoId={this.props.videoId}
           opts={optionsYoutubePlayer}
           onReady={this.play}
           onEnd={this.props.onClose}

@@ -18,8 +18,9 @@ export default class VideoList extends Component {
     this.state = { videoSelected: null, videoFull: false }
   }
 
-  selectVideo = id => {
-    this.setState({ videoSelected: id, videoFull: true })
+  selectVideo = elem => {
+    console.log(elem)
+    // this.setState({ videoSelected: id, videoFull: true })
   }
 
   closeFull = () => {
@@ -27,7 +28,9 @@ export default class VideoList extends Component {
   }
 
   render() {
-    const { videoFull } = this.state
+    const { videoFull, videoSelected } = this.state
+    const { videoList } = this.props
+    console.log(videoList)
     return (
       <>
         <Flex mx={-2} flexWrap="wrap">
@@ -39,6 +42,8 @@ export default class VideoList extends Component {
                   fontSize={6}
                   fontFamily="menu"
                   fontWeight="900"
+                  lineHeight={[1]}
+                  my={[5, 1]}
                   css={{ letterSpacing: -1.25 }}
                 >
                   Les bonus vidéos
@@ -49,53 +54,30 @@ export default class VideoList extends Component {
               <>
                 <Flex alignItems="center" flexWrap="wrap">
                   <Box width={1} my={2}>
-                    <Heading fontSize={5} fontFamily="menu">
-                      Les rencontres avec...
+                    <Heading
+                      fontSize={[4, 5]}
+                      lineHeight={[1, 3]}
+                      fontFamily="menu"
+                    >
+                      Des séquences du documentaire dans leur intégralité
                     </Heading>
                   </Box>
-                  <Box width={[1, 1, 1, 1, 1 / 2]}>
-                    <Player
-                      title="...Fatoumata, habitante du quartier"
-                      video=""
-                      selectVideo={this.selectVideo}
-                    />
-                  </Box>
-                  <Box width={[1, 1, 1, 1, 1 / 2]} pt={[0, 5]}>
-                    <Player title="tyest" video="" />
-                  </Box>
-                  <Box width={[1, 1 / 2]}>
-                    <Player
-                      title="...Fatoumata, habitante du quartier"
-                      video=""
-                    />
-                  </Box>
-                  <Box width={[1, 1 / 2]} pt={[0, 5]}>
-                    <Player title="tyest" video="" />
-                  </Box>
+                  {videoList.sequences.map(video => (
+                    <Box width={[1, 1 / 2]}>
+                      <Player
+                        title={video.title}
+                        video={video.link}
+                        description={video.description}
+                        selectVideo={() => this.selectVideo(video)}
+                      />
+                    </Box>
+                  ))}
                 </Flex>
                 <Flex alignItems="center" flexWrap="wrap">
                   <Box width={1} mt={6} mb={3}>
                     <Heading fontSize={5} fontFamily="menu">
                       Les moments...
                     </Heading>
-                  </Box>
-                  <Box width={[1, 1, 1, 1, 1 / 2]}>
-                    <Player
-                      title="...Fatoumata, habitante du quartier"
-                      video=""
-                    />
-                  </Box>
-                  <Box width={[1, 1, 1, 1, 1 / 2]} pt={[0, 5]}>
-                    <Player title="tyest" video="" />
-                  </Box>
-                  <Box width={[1, 1 / 2]}>
-                    <Player
-                      title="...Fatoumata, habitante du quartier"
-                      video=""
-                    />
-                  </Box>
-                  <Box width={[1, 1 / 2]} pt={[0, 5]}>
-                    <Player title="tyest" video="" />
                   </Box>
                 </Flex>
               </>
@@ -111,7 +93,9 @@ export default class VideoList extends Component {
                     {'<'} Retour aux bonus
                   </ReturnBtn>
                   <Flex>
-                    <VideoFull onClose={this.closeFull}>Video</VideoFull>
+                    <VideoFull onClose={this.closeFull} videoId={videoSelected}>
+                      Video
+                    </VideoFull>
                   </Flex>
                 </Box>
               </Flex>

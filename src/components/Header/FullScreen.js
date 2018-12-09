@@ -64,7 +64,7 @@ export default class FullScreen extends Component {
               onClick={this.props.onClose}
               mb={3}
             >
-              Close
+              Fermer
             </CloseBtn>
             <Flex>
               <Box mx="auto">
