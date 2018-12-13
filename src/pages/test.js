@@ -10,7 +10,7 @@ import VideoList from '../components/VideoList'
 import Donators from '../components/Donators'
 import Description from '../components/Description'
 
-const IndexPage = ({ data }) => (
+const TestPage = ({ data }) => (
   <>
     <Layout>
       <Helmet>
@@ -72,4 +72,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default TestPage
