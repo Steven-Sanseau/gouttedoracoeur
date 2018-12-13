@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { themeGet } from 'styled-system'
 import { Flex, Box, Heading, Text, Card } from 'rebass'
 import Hide from 'hidden-styled'
 
@@ -8,6 +9,23 @@ import Player from './Player'
 import Blob from '../Atomic/Blob'
 import Position from '../Atomic/Position'
 import VideoFull from './VideoFull'
+
+import FbSvg from '-!svg-react-loader?name=FbSvg!../../assets/Fb.svg'
+import TwitterSvg from '-!svg-react-loader?name=TwitterSvg!../../assets/Twitter.svg'
+
+const FbColored = styled(FbSvg)`
+  color: ${themeGet('colors.red')};
+  width: 3rem;
+  margin: 0 2rem;
+  cursor: pointer;
+`
+
+const TwitterColored = styled(TwitterSvg)`
+  color: ${themeGet('colors.red')};
+  margin: 0 2rem;
+  width: 3rem;
+  cursor: pointer;
+`
 
 const ReturnBtn = styled(Text)`
   cursor: pointer;
@@ -44,6 +62,7 @@ export default class VideoList extends Component {
                   lineHeight={[1]}
                   my={[5, 1]}
                   css={{ letterSpacing: -1.25 }}
+                  id="bonus"
                 >
                   Les bonus vidéos
                 </Heading>
@@ -163,7 +182,8 @@ export default class VideoList extends Component {
                     width={[0.9, 8 / 9]}
                     my={5}
                     borderRadius={[30, 50]}
-                    py={[3, 5]}
+                    pt={[2, 4]}
+                    pb={[2, 3]}
                     px={[3, 6]}
                   >
                     <Text
@@ -174,6 +194,30 @@ export default class VideoList extends Component {
                     >
                       Partagez la bande-annonce du film sur les réseaux sociaux
                       !
+                      <br />
+                      <Text
+                        textAlign="center"
+                        fontFamily="text"
+                        fontWeight="500"
+                        fontSize={4}
+                        my={3}
+                      >
+                        Cliquez ici:
+                      </Text>
+                      <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=http%3A//gouttedoracoeur.fr/"
+                        target="_blank"
+                        alt="Oui"
+                      >
+                        <FbColored />
+                      </a>
+                      <a
+                        href="https://twitter.com/home?status=En%20ligne%20et%20gratuit,%20super%20documentaire%20sur%20l'action%20sociale%20au%20coeur%20du%20quartier%20de%20la%20Goutte%20d'Or%20%C3%A0%20Paris%0Ahttps%3A//www.gouttedoracoeur.fr"
+                        target="_blank"
+                        alt="Oui"
+                      >
+                        <TwitterColored />
+                      </a>
                     </Text>
                   </Card>
                   <Box width={1} my={2}>

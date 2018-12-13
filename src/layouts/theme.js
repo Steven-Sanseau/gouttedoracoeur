@@ -1,6 +1,16 @@
 const theme = {
   breakpoints: ['64em', '80em'],
-  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  space: [
+    0,
+    '0.25rem',
+    '0.5rem',
+    '1rem',
+    '2rem',
+    '4rem',
+    '8rem',
+    '16rem',
+    '32rem',
+  ],
   fonts: {
     menu: 'Palanquin Dark',
     submenu: 'Palanquin SemiBold',
