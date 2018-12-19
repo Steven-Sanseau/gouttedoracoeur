@@ -30,10 +30,7 @@ const Footer = () => (
             <Text fontFamily="text" fontSize={1} mt={3} textAlign="justify">
               Ont contribué à la <strong>réalisation des vidéos</strong> :
               Daniel Bouy (images et son), Nathalie Perrin (montage), Ahmet
-              Sissokho (musique), Eric Rey (mixage), Fabian Sibade, Mathieu
-              Maillet, David Aucouturier (pour leur précieuse assistance
-              technique) ainsi qu’Isabelle, Léo, Fabien, Cédric et Eric (pour
-              leur bienveillance). <br />
+              Sissokho (musique), Eric Rey (mixage). <br />
               <br />
               Ont contribué à la <strong>réalisation du site internet</strong> :
               Soline Ledésert (conception), Steven Sanséau (programmation), Rémy
