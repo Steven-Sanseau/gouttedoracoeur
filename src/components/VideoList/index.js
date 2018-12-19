@@ -59,7 +59,7 @@ export default class VideoList extends Component {
     return (
       <>
         <FlexOver mx={-2} flexWrap="wrap">
-          <Box bg={'background_blue'} width={1} px={[1, 7]} py={[1, 5]}>
+          <Box bg={'background_blue'} width={1} px={[1, 5, 7]} py={[1, 5]}>
             <Flex>
               <Box width={[1]} mx="auto" pb={[1, 5]} id="bonus">
                 {!videoFull && (
@@ -107,7 +107,7 @@ export default class VideoList extends Component {
                     my={5}
                     borderRadius={[30, 50]}
                     py={[3, 5]}
-                    px={[3, 6]}
+                    px={[3, 5, 6]}
                   >
                     <Heading
                       textAlign="center"
@@ -116,6 +116,7 @@ export default class VideoList extends Component {
                       fontSize={[5, 6]}
                       css={{ letterSpacing: -1.25 }}
                       mb={[2, 4]}
+                      lineHeight={1}
                     >
                       Au coeur de la Goutte d’Or…
                     </Heading>
@@ -124,6 +125,7 @@ export default class VideoList extends Component {
                       fontFamily="text"
                       fontWeight="400"
                       fontSize={3}
+                      lineHeight="20px"
                     >
                       Mai 2017 : Daniel Bouy, réalisateur de documentaires, fait
                       la connaissance de Christine Ledésert. <br />
@@ -195,7 +197,7 @@ export default class VideoList extends Component {
                     borderRadius={[30, 50]}
                     pt={[2, 4]}
                     pb={[2, 3]}
-                    px={[3, 6]}
+                    px={[3, 5, 6]}
                   >
                     <Text
                       textAlign="center"
