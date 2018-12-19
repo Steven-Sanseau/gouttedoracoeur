@@ -171,7 +171,7 @@ export default class VideoList extends Component {
                   <Box width={1} my={2}>
                     <Heading
                       fontSize={[4, 5]}
-                      lineHeight={[1, 3]}
+                      lineHeight={[1, 1.5]}
                       fontFamily="menu"
                       textAlign="center"
                     >

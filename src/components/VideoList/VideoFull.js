@@ -38,7 +38,7 @@ export default class VideoFull extends Component {
     }
     const { video } = this.props
     return (
-      <Box mx="auto" width={[1, 5 / 9]}>
+      <Box mx="auto" width={[1, 7 / 9]}>
         <Heading
           textAlign="center"
           fontSize={5}
