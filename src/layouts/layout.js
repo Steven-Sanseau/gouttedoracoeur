@@ -5,10 +5,7 @@ import theme from './theme'
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <>
-      <GlobalStyle />
-      {children}
-    </>
+    <>{children}</>
   </ThemeProvider>
 )
 
