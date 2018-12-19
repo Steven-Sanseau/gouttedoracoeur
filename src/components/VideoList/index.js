@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { navigate } from 'gatsby'
 import { themeGet } from 'styled-system'
 import { Flex, Box, Heading, Text, Card } from 'rebass'
 import Hide from 'hidden-styled'
@@ -39,6 +40,7 @@ export default class VideoList extends Component {
 
   selectVideo = elem => {
     this.setState({ videoSelected: elem, videoFull: true })
+    navigate('/#bonus')
   }
 
   closeFull = () => {
@@ -53,19 +55,20 @@ export default class VideoList extends Component {
         <FlexOver mx={-2} flexWrap="wrap">
           <Box bg={'background_blue'} width={1} px={[1, 7]} py={[1, 5]}>
             <Flex>
-              <Box width={[1]} mx="auto" pb={[1, 5]}>
-                <Heading
-                  textAlign="center"
-                  fontSize={6}
-                  fontFamily="menu"
-                  fontWeight="900"
-                  lineHeight={[1]}
-                  my={[5, 1]}
-                  css={{ letterSpacing: -1.25 }}
-                  id="bonus"
-                >
-                  Les bonus vidéos
-                </Heading>
+              <Box width={[1]} mx="auto" pb={[1, 5]} id="bonus">
+                {!videoFull && (
+                  <Heading
+                    textAlign="center"
+                    fontSize={6}
+                    fontFamily="menu"
+                    fontWeight="900"
+                    lineHeight={[1]}
+                    my={[5, 1]}
+                    css={{ letterSpacing: -1.25 }}
+                  >
+                    Les bonus vidéos
+                  </Heading>
+                )}
               </Box>
             </Flex>
             {!videoFull && (

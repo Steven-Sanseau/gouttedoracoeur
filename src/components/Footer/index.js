@@ -1,6 +1,22 @@
 import React from 'react'
+import styled from 'styled-components'
+import { themeGet } from 'styled-system'
 import { Link } from 'gatsby'
 import { Flex, Box, Text } from 'rebass'
+
+const LinkStyled = styled.a`
+  color: ${themeGet('colors.blue')};
+  font-family: ${themeGet('fonts.text')};
+  font-weight: 600;
+  text-decoration: none;
+`
+
+const GatsbyLinkStyled = styled(Link)`
+  color: ${themeGet('colors.blue')};
+  font-family: ${themeGet('fonts.text')};
+  font-weight: 600;
+  text-decoration: none;
+`
 
 const Footer = () => (
   <>
@@ -21,7 +37,9 @@ const Footer = () => (
               <br />
               Ont contribué à la <strong>réalisation du site internet</strong> :
               Soline Ledésert (conception), Steven Sanséau (programmation), Rémy
-              Vehier (graphisme) et Julie Henches (communication).
+              Vehier (graphisme) et Julie Henches (communication). <br /> <br />
+              Merci Clara Borgen et à l'atelier Pierre Pierre pour la
+              réalisation de la bande Annonce.
               <br /> <br /> Merci à Mylène Clément, Pierre Herouali et Thierry
               Gautier (TGA productions) pour leurs interventions efficaces.
               Merci aux usagers, à l'équipe des salariés, aux bénévoles, au
@@ -52,22 +70,25 @@ const Footer = () => (
               lineHeight={3}
             >
               Pour être bénévole, rendez-vous{' '}
-              <a
+              <LinkStyled
                 target="_blank"
                 href="https://www.accueilgouttedor.fr/adh%C3%A9rer-%C3%A0-ago/"
               >
                 ici
-              </a>
+              </LinkStyled>
               . <br />
               Pour faire un don, rendez-vous{' '}
-              <a target="_blank" href="http://">
+              <LinkStyled target="_blank" href="http://">
                 ici
-              </a>
+              </LinkStyled>
               .
               <br /> Le site d'Accueil Goutte d'Or :{' '}
-              <a target="_blank" href="https://www.accueilgouttedor.fr/">
+              <LinkStyled
+                target="_blank"
+                href="https://www.accueilgouttedor.fr/"
+              >
                 www.accueilgouttedor.fr
-              </a>
+              </LinkStyled>
               <br />
               Pour nous suivre sur Facebook, c’est <a href="">ici</a>.
             </Text>
@@ -78,7 +99,8 @@ const Footer = () => (
               fontWeight={500}
               mt={3}
             >
-              2018 - <Link to="/cgu">Mentions légales</Link>
+              2018 -{' '}
+              <GatsbyLinkStyled to="/cgu">Mentions légales</GatsbyLinkStyled>
             </Text>
           </Box>
         </Flex>

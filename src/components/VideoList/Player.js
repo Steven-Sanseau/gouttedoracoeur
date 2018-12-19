@@ -16,7 +16,7 @@ const Player = props => (
     my={3}
     mx={'auto'}
   >
-    <Text fontSize={3} fontFamily="text" fontWeight="600" mb={3}>
+    <Text fontSize={4} fontFamily="text" fontWeight="600" mb={3}>
       {props.title}
     </Text>
     <StaticQuery
