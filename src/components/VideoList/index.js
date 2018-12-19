@@ -162,7 +162,7 @@ export default class VideoList extends Component {
                       fontWeight="700"
                       fontSize={3}
                     >
-                      En 64 minutes, ce documentaire nous fait partager les
+                      En 59 minutes, ce documentaire nous fait partager les
                       inquiétudes et les espoirs, les rires et les pleurs, les
                       épreuves et les fêtes des salariés, bénévoles et usagers
                       d’Accueil Goutte d’Or.
