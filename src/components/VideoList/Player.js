@@ -2,10 +2,6 @@ import React from 'react'
 import { Box, Text } from 'rebass'
 import styled from 'styled-components'
 
-import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import PlayButton from '../Atomic/PlayButton'
-import Position from '../Atomic/Position'
 import Image from '../Atomic/Image'
 
 const PlayerWrapper = styled(Box)`
