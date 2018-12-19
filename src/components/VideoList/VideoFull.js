@@ -56,7 +56,13 @@ export default class VideoFull extends Component {
           onReady={this.play}
           onEnd={this.props.onClose}
         />
-        <Text mt={3} fontFamily="text" textAlign="justify" fontSize={3}>
+        <Text
+          mt={3}
+          fontFamily="text"
+          textAlign="justify"
+          fontSize={3}
+          lineHeight="20px"
+        >
           {video.description}
         </Text>
       </Box>

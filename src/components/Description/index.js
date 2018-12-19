@@ -47,7 +47,7 @@ const Description = () => (
               Une histoire
             </Heading>
             <Text fontFamily="text" fontWeight="400">
-              À quelques jours de sa retraite professionelle, Christine partage
+              À quelques jours de sa retraite professionnelle, Christine partage
               avec nous sa vision de la Goutte d'Or...
             </Text>
           </Box>

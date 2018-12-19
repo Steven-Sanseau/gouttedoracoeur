@@ -14,21 +14,21 @@
     },
     {
       "title": "Une visite de la Goutte d’Or",
-      "link": "0nbjOfzErRQ",
-      "img": "geneviève",
+      "link": "NQFh14jZho8",
+      "img": "visite.jpg",
       "description": "Petites et grandes histoires de la Goutte d’Or au gré des rappels historiques et des souvenirs personnels de Christine, guide de la visite…"
     },
     {
       "title": "Le «pot de départ en retraite»",
-      "link": "0nbjOfzErRQ",
-      "img": "geneviève",
+      "link": "GUdvxHMEVHs",
+      "img": "pot.jpg",
       "description": "10 novembre 2017 : dans les locaux du centre social se pressent des dizaines d’habitants du quartier, de bénévoles, d’élus, de représentants d’associations, de professionnels du travail social… Une soirée entre rires et larmes…"
     }
   ],
   "meeting": [
     {
       "title": "Fatoumata",
-      "link": "hGLxshKmRWM",
+      "link": "dpnLkaZNSxQ",
       "img": "fatoumata.jpg",
       "description": "Christine connait Fatoumata depuis qu’elle est bébé… L’adolescente évoque quelques souvenirs de son enfance. Elle parle de sa mère, Mariamou qui a traversé tant d’épreuves depuis son arrivée en France et qui est aujourd’hui si fière que sa fille ait obtenu la nationalité française…"
     },
@@ -41,13 +41,19 @@
     {
       "title": "Gnoh",
       "link": "UVYi-n3KuY8",
-      "img": "visite.jpg",
+      "img": "gnoh.jpg",
       "description": "Gnoh confie le récit des épisodes douloureux de sa vie qui l’ont amenée à migrer en France et sa bataille actuellement sans succès pour faire venir auprès d’elle sa fille de 16ans Khadidja, restée en Côte d’Ivoire."
+    },
+    {
+      "title": "Estelle",
+      "link": "iuyUboE7Q_s",
+      "img": "estelle.jpg",
+      "description": "Directrice de la Salle Saint Bruno"
     },
     {
       "title": "Tarik Touahria",
       "link": "jSusEGBDypo",
-      "img": "visite.jpg",
+      "img": "tarik.jpg",
       "description": "Tarik Touahria est bénévole et trésorier d'Accueil Goutte d'Or, président de la fédération des centres sociaux parisiens"
     },
     {
@@ -59,27 +65,27 @@
     {
       "title": "Ladji",
       "link": "5HevYi5ztj0",
-      "img": "visite.jpg",
+      "img": "sylla.jpg",
       "description": ""
     }
   ],
   "talk": [
     {
       "title": "Mylène Clément, présidente d’Accueil Goutte d’Or",
-      "link": "0nbjOfzErRQ",
-      "img": "geneviève",
+      "link": "Jqx9IpBxU2Y",
+      "img": "mylene.jpg",
       "description": ""
     },
     {
       "title": "Eric Lejoindre, maire du 18ème arrondissement de Paris",
-      "link": "0nbjOfzErRQ",
-      "img": "geneviève",
+      "link": "OsKR6x69oso",
+      "img": "maire.jpg",
       "description": ""
     },
     {
-      "title": "Maguy Benisty, bénévole",
-      "link": "0nbjOfzErRQ",
-      "img": "geneviève",
+      "title": "Maguy, bénévole",
+      "link": "nmcdk0c73p0",
+      "img": "maguy.jpg",
       "description": ""
     },
     {
