@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import PlayButton from '../Atomic/PlayButton'
 
 const PlayerWrapper = styled(Box)`
   cursor: pointer;
@@ -19,6 +20,9 @@ const Player = props => (
     <Text fontSize={4} fontFamily="text" lineHeight={1} fontWeight="600" mb={3}>
       {props.title}
     </Text>
+    <Position>
+      <PlayButton color="" />
+    </Position>
     <StaticQuery
       query={graphql`
         query {

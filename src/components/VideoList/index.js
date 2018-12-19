@@ -59,7 +59,7 @@ export default class VideoList extends Component {
     return (
       <>
         <FlexOver mx={-2} flexWrap="wrap">
-          <Box bg={'background_blue'} width={1} px={[1, 5, 7]} py={[1, 5]}>
+          <Box bg={'background_blue'} width={1} px={[1, 5, 6]} py={[1, 5]}>
             <Flex>
               <Box width={[1]} mx="auto" pb={[1, 5]} id="bonus">
                 {!videoFull && (

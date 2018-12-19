@@ -7,8 +7,8 @@ const theme = {
     '1rem',
     '2rem',
     '4rem',
-    '13rem',
-    '16rem',
+    '8rem',
+    '11rem',
     '32rem',
   ],
   fonts: {

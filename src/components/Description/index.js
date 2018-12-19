@@ -10,7 +10,7 @@ const Description = () => (
       <Box width={[0.8, '80%']} mx="auto">
         <Flex flexWrap="wrap" alignItems="center" mx={-2}>
           <Box mx="auto" width={[1, 1 / 4]}>
-            <Position top="-3rem" left="8rem">
+            <Position top="-5rem" left="8rem">
               <Blob color="green" size="68" />
             </Position>
             <Heading fontSize={6} fontFamily="menu">
@@ -36,14 +36,14 @@ const Description = () => (
             </Text>
           </Box>
           <Box mx="auto" mt={[5, 0]} width={[1, 1 / 4]}>
-            <Position top="-3rem" left="4rem">
+            <Position top="-5rem" left="4rem">
               <Blob color="blue" size="60" />
             </Position>
-            <Position top="-1.5rem" left="7rem">
+            <Position top="-3.5rem" left="7rem">
               <Blob color="blue" size="30" />
             </Position>
 
-            <Heading fontSize={6} lineHeight={1.5} fontFamily="menu">
+            <Heading fontSize={6} lineHeight={1.3} fontFamily="menu">
               Une histoire
             </Heading>
             <Text fontFamily="text" fontWeight="400">
