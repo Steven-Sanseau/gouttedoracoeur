@@ -15,6 +15,9 @@ import FbSvg from '-!svg-react-loader?name=FbSvg!../../assets/Fb.svg'
 import TwitterSvg from '-!svg-react-loader?name=TwitterSvg!../../assets/Twitter.svg'
 
 const FbColored = styled(FbSvg)`
+  :hover {
+    color: ${themeGet('colors.red_darken')};
+  }
   color: ${themeGet('colors.red')};
   width: 3rem;
   margin: 0 2rem;
@@ -22,6 +25,9 @@ const FbColored = styled(FbSvg)`
 `
 
 const TwitterColored = styled(TwitterSvg)`
+  :hover {
+    color: ${themeGet('colors.red_darken')};
+  }
   color: ${themeGet('colors.red')};
   margin: 0 2rem;
   width: 3rem;
@@ -79,6 +85,7 @@ export default class VideoList extends Component {
                       fontSize={[4, 5]}
                       lineHeight={[1, 3]}
                       fontFamily="menu"
+                      textAlign="center"
                     >
                       Des séquences du documentaire dans leur intégralité
                     </Heading>
@@ -164,6 +171,7 @@ export default class VideoList extends Component {
                       fontSize={[4, 5]}
                       lineHeight={[1, 3]}
                       fontFamily="menu"
+                      textAlign="center"
                     >
                       Les rencontres de Christine avec des habitants, des
                       bénévoles et des professionnels du quartier
@@ -228,6 +236,7 @@ export default class VideoList extends Component {
                       fontSize={[4, 5]}
                       lineHeight={[1, 3]}
                       fontFamily="menu"
+                      textAlign="center"
                     >
                       Ils parlent de Christine…
                     </Heading>

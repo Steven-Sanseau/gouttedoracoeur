@@ -7,7 +7,7 @@ const theme = {
     '1rem',
     '2rem',
     '4rem',
-    '8rem',
+    '13rem',
     '16rem',
     '32rem',
   ],
@@ -23,6 +23,7 @@ const theme = {
   },
   colors: {
     red: '#F7A5B2',
+    red_darken: '#f05971',
     blue: '#B1C0F5',
     green: '#358457',
     white: '#ffffff',

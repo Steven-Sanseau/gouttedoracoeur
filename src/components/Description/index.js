@@ -22,7 +22,7 @@ const Description = () => (
             </Text>
           </Box>
           <Box mx="auto" mt={[4, 0]} width={[1, 1 / 4]}>
-            <Heading fontSize={6} fontFamily="menu">
+            <Heading fontSize={6} lineHeight={1.7} fontFamily="menu">
               Un
               <Position top="-5rem" marginBottom="-7rem" left="8rem">
                 <Blob color="red" size="76" />
@@ -35,7 +35,7 @@ const Description = () => (
               ans.
             </Text>
           </Box>
-          <Box mx="auto" mt={[6, 0]} width={[1, 1 / 4]}>
+          <Box mx="auto" mt={[5, 0]} width={[1, 1 / 4]}>
             <Position top="-3rem" left="4rem">
               <Blob color="blue" size="60" />
             </Position>
@@ -43,7 +43,7 @@ const Description = () => (
               <Blob color="blue" size="30" />
             </Position>
 
-            <Heading fontSize={6} fontFamily="menu">
+            <Heading fontSize={6} lineHeight={1.5} fontFamily="menu">
               Une histoire
             </Heading>
             <Text fontFamily="text" fontWeight="400">

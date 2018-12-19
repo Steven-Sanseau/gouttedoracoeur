@@ -52,7 +52,7 @@ export default class Header extends Component {
             onClose={this.closeFullscreenMode}
           />
         )}
-        <HeaderBackground pb={7} pt={7} m={-2} color="white">
+        <HeaderBackground pb={6} pt={7} m={-2} color="white">
           <FlexOver>
             <Position left="1rem" top="-7rem">
               <Blob size="300" color="gold" />
