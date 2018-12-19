@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, Heading, Flex, Box } from 'rebass'
-import anime from 'animejs'
+// import anime from 'animejs'
 
 import FlexOver from '../Atomic/FlexOver'
 import Blob from '../Atomic/Blob'
@@ -26,11 +26,11 @@ export default class Header extends Component {
   }
 
   playMovie = e => {
-    anime({
-      targets: e.currentTarget,
-      width: '20rem',
-      height: '20rem',
-    })
+    // anime({
+    //   targets: e.currentTarget,
+    //   width: '20rem',
+    //   height: '20rem',
+    // })
     this.setState({ autoPlayMovie: false, fullscreenMode: true })
   }
 

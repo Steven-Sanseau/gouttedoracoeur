@@ -107,8 +107,8 @@ export default class VideoList extends Component {
                     width={[0.9, 8 / 9]}
                     my={5}
                     borderRadius={[30, 50]}
-                    py={[3, 5]}
-                    px={[3, 5, 6]}
+                    py={[4, 5]}
+                    px={[4, 5, 6]}
                   >
                     <Heading
                       textAlign="center"
@@ -116,7 +116,7 @@ export default class VideoList extends Component {
                       fontWeight="900"
                       fontSize={[5, 6]}
                       css={{ letterSpacing: -1.25 }}
-                      mb={[2, 4]}
+                      mb={4}
                       lineHeight={1}
                     >
                       Au coeur de la Goutte d’Or…
