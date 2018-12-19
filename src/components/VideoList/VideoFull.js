@@ -24,10 +24,16 @@ export default class VideoFull extends Component {
 
   render() {
     const optionsYoutubePlayer = {
-      height: 500,
-      width: 750,
+      width: '100%',
       playerVars: {
         autoplay: 1,
+        controls: 0,
+        cc_load_policy: 0,
+        fs: 0,
+        iv_load_policy: 3,
+        modestbranding: 1,
+        rel: 0,
+        showinfo: 0,
       },
     }
     const { video } = this.props
