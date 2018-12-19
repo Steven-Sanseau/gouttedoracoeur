@@ -17,8 +17,8 @@ const Description = () => (
               Un décor
             </Heading>
             <Text fontFamily="text" fontWeight="400">
-              Le quartier de la goutte d'or dans le 18ème arrondissement de
-              Paris, son centre social associatif Accueil Goutte d'or.
+              Le quartier de la Goutte d'Or dans le 18ème arrondissement de
+              Paris, son centre social associatif Accueil Goutte d'Or.
             </Text>
           </Box>
           <Box mx="auto" mt={[4, 0]} width={[1, 1 / 4]}>
@@ -47,8 +47,8 @@ const Description = () => (
               Une histoire
             </Heading>
             <Text fontFamily="text" fontWeight="400">
-              A quelques jours de sa retraite profesionelle, Christine partage
-              avec nous sa vision de la Goutte d'Or ...
+              À quelques jours de sa retraite professionelle, Christine partage
+              avec nous sa vision de la Goutte d'Or...
             </Text>
           </Box>
         </Flex>

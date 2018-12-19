@@ -32,8 +32,8 @@ const Donators = props => (
               mb={4}
             >
               La production du documentaire «Goutte d’Or à coeur» et la
-              réalisation de ce site internet n’auraient pas été possible sans
-              la contribution financière de:
+              réalisation de ce site n’auraient pas été possibles sans la
+              contribution financière de :
             </Text>
             <Flex flexWrap="wrap">
               {props.donators.map(donator => (

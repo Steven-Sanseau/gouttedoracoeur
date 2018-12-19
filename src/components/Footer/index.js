@@ -38,8 +38,8 @@ const Footer = () => (
               Ont contribué à la <strong>réalisation du site internet</strong> :
               Soline Ledésert (conception), Steven Sanséau (programmation), Rémy
               Vehier (graphisme) et Julie Henches (communication). <br /> <br />
-              Merci Clara Borgen et à l'atelier Pierre Pierre pour la
-              réalisation de la bande Annonce.
+              Merci à Clara Borgen et à l'atelier Pierre Pierre pour la
+              réalisation de la bande-annonce.
               <br /> <br /> Merci à Mylène Clément, Pierre Herouali et Thierry
               Gautier (TGA productions) pour leurs interventions efficaces.
               Merci aux usagers, à l'équipe des salariés, aux bénévoles, au
@@ -92,7 +92,8 @@ const Footer = () => (
                 www.accueilgouttedor.fr
               </LinkStyled>
               <br />
-              Pour nous suivre sur Facebook, c’est <a href="">ici</a>.
+              Pour suivre Accueil Goutte d'Or sur Facebook, c’est{' '}
+              <a href="">ici</a>.
             </Text>
             <Text
               textAlign="center"

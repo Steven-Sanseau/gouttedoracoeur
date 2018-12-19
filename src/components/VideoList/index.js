@@ -110,7 +110,7 @@ export default class VideoList extends Component {
                       css={{ letterSpacing: -1.25 }}
                       mb={[2, 4]}
                     >
-                      Au coeur de la goutte d’or…
+                      Au coeur de la Goutte d’Or…
                     </Heading>
                     <Text
                       textAlign="justify"
@@ -195,9 +195,7 @@ export default class VideoList extends Component {
                       fontWeight="700"
                       fontSize={5}
                     >
-                      Partagez la bande-annonce du film sur les réseaux sociaux
-                      !
-                      <br />
+                      Partagez le film sur les réseaux sociaux !
                       <Text
                         textAlign="center"
                         fontFamily="text"
@@ -205,7 +203,7 @@ export default class VideoList extends Component {
                         fontSize={4}
                         my={3}
                       >
-                        Cliquez ici:
+                        Cliquez ici :
                       </Text>
                       <a
                         href="https://www.facebook.com/sharer/sharer.php?u=http%3A//gouttedoracoeur.fr/"
