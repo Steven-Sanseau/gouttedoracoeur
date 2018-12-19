@@ -5,6 +5,8 @@ import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import PlayButton from '../Atomic/PlayButton'
+import Position from '../Atomic/Position'
+import Image from '../Atomic/Image'
 
 const PlayerWrapper = styled(Box)`
   cursor: pointer;
@@ -20,25 +22,8 @@ const Player = props => (
     <Text fontSize={4} fontFamily="text" lineHeight={1} fontWeight="600" mb={3}>
       {props.title}
     </Text>
-    <Position>
-      <PlayButton color="" />
-    </Position>
-    <StaticQuery
-      query={graphql`
-        query {
-          placeholderImage: file(relativePath: { eq: "vid.png" }) {
-            childImageSharp {
-              fluid(maxWidth: 250) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      `}
-      render={data => (
-        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-      )}
-    />
+    <Image src={props.image} />
+
     <Text
       fontSize={3}
       fontFamily="text"

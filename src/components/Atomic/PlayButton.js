@@ -11,11 +11,12 @@ const PlayColored = styled(Box)`
   }
   .play-elem {
     display: flex;
-    width: ${props => props.size}rem;
-    height: ${props => props.size}rem;
     margin-left: auto;
     margin-right: auto;
   }
+  width: ${props => props.size}rem;
+  height: ${props => props.size}rem;
+  z-index: 1700;
 `
 
 const PlayButtonWrapper = styled.div`

@@ -1,32 +1,52 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { StaticQuery, graphql } from 'gatsby'
 
-/*
- * This component is built using `gatsby-image` to automatically serve optimized
- * images with lazy loading and reduced file sizes. The image is loaded using a
- * `StaticQuery`, which allows us to load the image from directly within this
- * component, rather than having to pass the image data down from pages.
- *
- * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.app/gatsby-image
- * - `StaticQuery`: https://gatsby.app/staticquery
- */
+function renderImage(file) {
+  console.log(file)
+  if (!file) return
 
-const Image = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
+  return <Img fluid={file.node.childImageSharp.fluid} />
+}
+
+const Image = function(props) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          images: allFile(filter: { extension: { eq: "jpg" } }) {
+            edges {
+              node {
+                extension
+                relativePath
+                name
+                childImageSharp {
+                  fluid(maxWidth: 1000) {
+                    base64
+                    aspectRatio
+                    src
+                    srcSet
+                    srcWebp
+                    srcSetWebp
+                    sizes
+                    originalImg
+                    originalName
+                    presentationWidth
+                    presentationHeight
+                  }
+                }
+              }
             }
           }
         }
+      `}
+      render={({ images }) =>
+        renderImage(
+          images.edges.find(image => image.node.relativePath === props.src)
+        )
       }
-    `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-  />
-)
+    />
+  )
+}
+
 export default Image

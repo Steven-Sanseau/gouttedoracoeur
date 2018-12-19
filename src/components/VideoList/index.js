@@ -94,6 +94,7 @@ export default class VideoList extends Component {
                     <Box key={video.link + video.title} width={[1, 1 / 2]}>
                       <Player
                         title={video.title}
+                        image={video.img}
                         video={video.link}
                         description={video.description}
                         selectVideo={() => this.selectVideo(video)}
@@ -183,6 +184,7 @@ export default class VideoList extends Component {
                     <Box key={video.link + video.title} width={[1, 1 / 2]}>
                       <Player
                         title={video.title}
+                        image={video.img}
                         video={video.link}
                         description={video.description}
                         selectVideo={() => this.selectVideo(video)}
@@ -247,6 +249,7 @@ export default class VideoList extends Component {
                     <Box key={video.link + video.title} width={[1, 1 / 2]}>
                       <Player
                         title={video.title}
+                        image={video.img}
                         video={video.link}
                         description={video.description}
                         selectVideo={() => this.selectVideo(video)}
