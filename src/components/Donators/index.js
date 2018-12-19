@@ -37,14 +37,29 @@ const Donators = props => (
             </Text>
             <Flex flexWrap="wrap">
               {props.donators.map(donator => (
-                <Box width={[1, 1 / 5]} key={donator.name + donator.firstName}>
-                  <DonatorText fontFamily="text" fontWeight="400" fontSize={1}>
+                <Box
+                  width={[1, 1 / 5]}
+                  p={2}
+                  key={donator.name + donator.firstName}
+                >
+                  <DonatorText
+                    fontFamily="text"
+                    fontWeight="400"
+                    lineHeight={1.7}
+                    fontSize={1}
+                  >
                     {donator.firstName} {donator.name}
                   </DonatorText>
                 </Box>
               ))}
             </Flex>
-            <Text fontFamily="text" fontSize={3} fontWeight="500" my={4}>
+            <Text
+              fontFamily="text"
+              fontSize={3}
+              fontWeight="500"
+              textAlign="center"
+              my={4}
+            >
               Un grand merci à nos donateurs !
             </Text>
           </Box>

@@ -35,9 +35,10 @@ export default class VideoFull extends Component {
       <Box mx="auto" width={[1, 5 / 9]}>
         <Heading
           textAlign="center"
-          fontSize={6}
+          fontSize={5}
           fontFamily="menu"
           fontWeight="900"
+          lineHeight={1}
           mb={4}
           css={{ letterSpacing: -1.25 }}
         >

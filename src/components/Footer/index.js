@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { themeGet } from 'styled-system'
 import { Link } from 'gatsby'
-import { Flex, Box, Text } from 'rebass'
+import { Flex, Box, Text, Heading } from 'rebass'
 
 const LinkStyled = styled.a`
   color: ${themeGet('colors.blue')};
@@ -21,13 +21,19 @@ const GatsbyLinkStyled = styled(Link)`
 const Footer = () => (
   <>
     <Flex flexWrap="wrap" mx={-2}>
-      <Box width={1} px={3} py={5} bg={'background_blue'}>
+      <Box width={1} px={3} pb={5} bg={'background_blue'}>
         <Flex alignItems="center">
           <Box width={[1, 5 / 8]} mx="auto">
-            <Text fontFamily="menu" fontSize={5} textAlign="left">
+            <Heading fontFamily="menu" fontSize={5} textAlign="center" py={4}>
               Crédits
-            </Text>
-            <Text fontFamily="text" fontSize={1} mt={3} textAlign="justify">
+            </Heading>
+            <Text
+              fontFamily="text"
+              fontSize={3}
+              textAlign="justify"
+              fontWeight="500"
+              mb={4}
+            >
               Ont contribué à la <strong>réalisation des vidéos</strong> :
               Daniel Bouy (images et son), Nathalie Perrin (montage), Ahmet
               Sissokho (musique), Eric Rey (mixage). <br />
@@ -47,17 +53,12 @@ const Footer = () => (
       </Box>
     </Flex>
     <Flex flexWrap="wrap" mx={-2}>
-      <Box width={1} px={3} pt={5} bg={'background_gray'}>
+      <Box width={1} px={3} bg={'background_gray'}>
         <Flex alignItems="center">
           <Box width={[1, 5 / 8]} mx="auto">
-            <Text
-              fontFamily="text"
-              fontWeight="700"
-              fontSize={5}
-              textAlign="left"
-            >
+            <Heading fontFamily="menu" fontSize={5} textAlign="center" py={4}>
               Pour soutenir Accueil Goutte d'or
-            </Text>
+            </Heading>
             <Text
               fontFamily="text"
               fontSize={1}
@@ -108,7 +109,7 @@ const Footer = () => (
               fontFamily="text"
               fontSize={1}
               fontWeight={500}
-              mt={3}
+              mt={4}
             >
               2018 -{' '}
               <GatsbyLinkStyled to="/cgu">Mentions légales</GatsbyLinkStyled>
