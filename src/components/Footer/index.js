@@ -69,28 +69,39 @@ const Footer = () => (
               Pour être bénévole, rendez-vous{' '}
               <LinkStyled
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://www.accueilgouttedor.fr/adh%C3%A9rer-%C3%A0-ago/"
               >
                 ici
               </LinkStyled>
               . <br />
               Pour faire un don, rendez-vous{' '}
-              <LinkStyled target="_blank" rel="noopener" href="http://">
+              <LinkStyled
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://facebook.com"
+              >
                 ici
               </LinkStyled>
               .
               <br /> Le site d'Accueil Goutte d'Or :{' '}
               <LinkStyled
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://www.accueilgouttedor.fr/"
               >
                 www.accueilgouttedor.fr
               </LinkStyled>
               <br />
               Pour suivre Accueil Goutte d'Or sur Facebook, c’est{' '}
-              <a href="">ici</a>.
+              <LinkStyled
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.accueilgouttedor.fr/"
+              >
+                ici
+              </LinkStyled>
+              .
             </Text>
             <Text
               textAlign="center"

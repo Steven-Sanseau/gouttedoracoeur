@@ -208,7 +208,7 @@ export default class VideoList extends Component {
                       <a
                         href="https://www.facebook.com/sharer/sharer.php?u=http%3A//gouttedoracoeur.fr/"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                         alt="Oui"
                       >
                         <FbColored />
@@ -216,7 +216,7 @@ export default class VideoList extends Component {
                       <a
                         href="https://twitter.com/home?status=En%20ligne%20et%20gratuit,%20super%20documentaire%20sur%20l'action%20sociale%20au%20coeur%20du%20quartier%20de%20la%20Goutte%20d'Or%20%C3%A0%20Paris%0Ahttps%3A//www.gouttedoracoeur.fr"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                         alt="Oui"
                       >
                         <TwitterColored />
@@ -267,6 +267,9 @@ export default class VideoList extends Component {
           <Hide xs sm md>
             <Position top="20rem" left="-10rem">
               <Blob size="500" color="blue" rotate="45" />
+            </Position>
+            <Position top="40rem" left="1rem">
+              <Blob size="500" color="gold" rotate="-45" />
             </Position>
           </Hide>
         </FlexOver>

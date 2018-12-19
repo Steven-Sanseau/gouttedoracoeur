@@ -3,18 +3,19 @@ import { Box, Text } from 'rebass'
 import { themeGet } from 'styled-system'
 import styled from 'styled-components'
 
-import Play from '-!svg-react-loader?name=Play!../../assets/Play.svg'
+import PlaySvg from '-!svg-react-loader?name=PlaySvg!../../assets/Play.svg'
 
-const PlayColored = styled(Play)`
-  .play-button {
+const PlayColored = styled(Box)`
+  .play-fill {
     fill: ${props => themeGet(`colors.${props.color}`)};
   }
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-
-  width: ${props => props.size}rem;
-  height: ${props => props.size}rem;
+  .play-elem {
+    display: flex;
+    width: ${props => props.size}rem;
+    height: ${props => props.size}rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `
 
 const PlayButtonWrapper = styled.div`
@@ -23,7 +24,7 @@ const PlayButtonWrapper = styled.div`
 
 const PlayButton = props => (
   <PlayButtonWrapper
-    onClick={e => props.playMovie(e)}
+    onClick={props.playMovie}
     onMouseEnter={props.autoPlayMovie}
     onMouseLeave={props.stopMovie}
   >
@@ -32,7 +33,9 @@ const PlayButton = props => (
         size={props.size}
         color={props.color}
         ref={props.playButtonRef}
-      />
+      >
+        <PlaySvg />
+      </PlayColored>
       {props.text && (
         <Text
           textAlign="center"

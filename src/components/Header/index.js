@@ -43,7 +43,7 @@ export default class Header extends Component {
   }
 
   render() {
-    const { fullscreenMode, autoPlayMovie } = this.state
+    const { fullscreenMode } = this.state
     return (
       <div>
         {fullscreenMode && (

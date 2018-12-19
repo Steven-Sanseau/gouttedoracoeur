@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex, Heading, Text } from 'rebass'
+import { Box, Flex, Text } from 'rebass'
 import { Link } from 'gatsby'
 
 const Cgu = () => (
