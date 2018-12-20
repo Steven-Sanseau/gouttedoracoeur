@@ -23,7 +23,9 @@ const IndexPage = ({ data }) => (
         />
         <meta
           property="og:image"
-          content={data.images.edges[0].node.publicUrl}
+          content={`https://www.gouttedoracoeur.fr${
+            data.images.edges[0].node.publicURL
+          }`}
         />
         <title>Goutte d'or à Coeur le film</title>
         <meta charSet="utf-8" />

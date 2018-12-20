@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { themeGet } from 'styled-system'
@@ -24,7 +24,15 @@ const RocketPage = () => (
         <Box pt={7} mx="auto">
           <Flex>
             <ButtonRocket px={4} py={3} borderRadius={3} bg="blue">
-              <LinkRocket to="/">🚀 Lancer le site 🚀</LinkRocket>
+              <LinkRocket to="/">
+                <span role="img" aria-label="rocket">
+                  🚀
+                </span>
+                Lancer le site
+                <span role="img" aria-label="rocket">
+                  🚀
+                </span>
+              </LinkRocket>
             </ButtonRocket>
           </Flex>
         </Box>
