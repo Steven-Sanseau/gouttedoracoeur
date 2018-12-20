@@ -10,7 +10,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-netlify`,
     `gatsby-plugin-flow`,
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-remove-serviceworker',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     `gatsby-transformer-json`,
