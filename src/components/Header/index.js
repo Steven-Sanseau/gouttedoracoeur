@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, Heading, Flex, Box } from 'rebass'
+import { navigate } from 'gatsby'
 import Hide from 'hidden-styled'
-// import anime from 'animejs'
 
 import FlexOver from '../Atomic/FlexOver'
 import Blob from '../Atomic/Blob'
@@ -27,11 +27,7 @@ export default class Header extends Component {
   }
 
   playMovie = e => {
-    // anime({
-    //   targets: e.currentTarget,
-    //   width: '20rem',
-    //   height: '20rem',
-    // })
+    navigate('/#fullscreenmode')
     this.setState({ autoPlayMovie: false, fullscreenMode: true })
   }
 
@@ -53,7 +49,7 @@ export default class Header extends Component {
             onClose={this.closeFullscreenMode}
           />
         )}
-        <HeaderBackground pb={7} pt={7} m={-2} color="white">
+        <HeaderBackground pb={[7]} pt={[3, 7]} m={-2} color="white">
           <Hide xs sm md>
             <FlexOver>
               <Position left="1rem" top="-7rem">

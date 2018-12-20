@@ -56,7 +56,7 @@ export default class FullScreen extends Component {
     return (
       <FullScreenWrapper ref={this.props.fullScreenRef}>
         <Flex>
-          <Box p={3}>
+          <Box p={3} id="fullscreenmode">
             <CloseBtn
               fontFamily="text"
               fontSize={4}

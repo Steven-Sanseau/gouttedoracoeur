@@ -180,8 +180,12 @@
     "firstName": "catherine"
   },
   {
-    "name": "rimbert-dubiel",
-    "firstName": "chantal-christiane"
+    "name": "rimbert",
+    "firstName": "chantal"
+  },
+  {
+    "name": "dubiel",
+    "firstName": "christiane"
   },
   {
     "name": "ledieu",
@@ -209,11 +213,11 @@
   },
   {
     "name": "sellin",
-    "firstName": "maryse et jean-yves"
+    "firstName": "maryse & jean-yves"
   },
   {
     "name": "giouse",
-    "firstName": "gaëlle et marc"
+    "firstName": "gaëlle & marc"
   },
   {
     "name": "goldstein",
@@ -241,7 +245,7 @@
   },
   {
     "name": "horvais - chavel",
-    "firstName": "jean et sylvie"
+    "firstName": "jean & sylvie"
   },
   {
     "name": "goulet",
