@@ -71,10 +71,10 @@
   ],
   "talk": [
     {
-      "title": "Mylène Clément, présidente d’Accueil Goutte d’Or",
+      "title": "Mylène Clément",
       "link": "Jqx9IpBxU2Y",
       "img": "mylene.jpg",
-      "description": ""
+      "description": "Présidente d’Accueil Goutte d’Or"
     },
     {
       "title": "Eric Lejoindre",
@@ -83,10 +83,10 @@
       "description": "Maire du 18ème arrondissement de Paris"
     },
     {
-      "title": "Maguy Benisty, bénévole",
+      "title": "Maguy Benisty",
       "link": "nmcdk0c73p0",
       "img": "maguy.jpg",
-      "description": ""
+      "description": "Bénévole"
     },
     {
       "title": "Fatoumata Sissoko",
@@ -101,16 +101,16 @@
       "description": "Adjointe au Maire de Paris"
     },
     {
-      "title": "L’intégralité du discours de Christine",
-      "link": "RKxYUI-uA7I",
-      "img": "christine.jpg",
-      "description": ""
-    },
-    {
       "title": "Fatou Gassama",
       "link": "hGLxshKmRWM",
       "img": "fatou.jpg",
-      "description": ""
+      "description": "Habitante du quartier"
+    },
+    {
+      "title": "Christine Ledésert",
+      "link": "RKxYUI-uA7I",
+      "img": "christine.jpg",
+      "description": "L’intégralité de son discours"
     }
   ]
 }
