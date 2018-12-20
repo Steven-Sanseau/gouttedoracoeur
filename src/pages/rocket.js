@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { themeGet } from 'styled-system'
 import { Flex, Box, Button } from 'rebass'
@@ -18,28 +17,20 @@ const LinkRocket = styled(Link)`
 
 const ButtonRocket = styled(Button)``
 
-class RocketPage extends Component {
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    return (
-      <>
-        <Layout>
+const RocketPage = () => (
+  <>
+    <Layout>
+      <Flex>
+        <Box pt={7} mx="auto">
           <Flex>
-            <Box pt={7} mx="auto">
-              <Flex>
-                <ButtonRocket px={4} py={3} borderRadius={3} bg="blue">
-                  <LinkRocket to="/">🚀 Lancer le site 🚀</LinkRocket>
-                </ButtonRocket>
-              </Flex>
-            </Box>
+            <ButtonRocket px={4} py={3} borderRadius={3} bg="blue">
+              <LinkRocket to="/">🚀 Lancer le site 🚀</LinkRocket>
+            </ButtonRocket>
           </Flex>
-        </Layout>
-      </>
-    )
-  }
-}
+        </Box>
+      </Flex>
+    </Layout>
+  </>
+)
 
 export default RocketPage

@@ -136,8 +136,8 @@ export default class VideoList extends Component {
                       <br />
                       Christine est alors directrice depuis 26 ans du Centre
                       social associatif Accueil Goutte d’Or (AGO) situé au cœur
-                      du quartier de la Goutte d’Or dans le XVIIIème
-                      arrondissement de Paris. <br />
+                      du quartier de la Goutte d’Or dans le 18ème arrondissement
+                      de Paris. <br />
                       <br />
                       Elle est une figure du quartier. Certains la surnomment
                       même la «maman du quartier» tant elle a aidé, accompagné,
