@@ -49,7 +49,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.gouttedoracoeur.fr',
-        policy: [{ userAgent: '*', disallow: '/' }],
+        policy: [{ userAgent: '*' }],
       },
     },
     {
