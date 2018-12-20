@@ -27,9 +27,7 @@ export default class VideoFull extends Component {
       width: '100%',
       playerVars: {
         autoplay: 1,
-        controls: 1,
         cc_load_policy: 0,
-        fs: 0,
         iv_load_policy: 3,
         modestbranding: 1,
         rel: 0,
