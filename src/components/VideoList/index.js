@@ -50,7 +50,9 @@ export default class VideoList extends Component {
   }
 
   closeFull = () => {
+    const { videoSelected } = this.state
     this.setState({ videoSelected: {}, videoFull: false })
+    navigate(`/#${videoSelected.link}`)
   }
 
   render() {
@@ -93,6 +95,7 @@ export default class VideoList extends Component {
                   {videoList.sequences.map(video => (
                     <Box key={video.link + video.title} width={[1, 1 / 2]}>
                       <Player
+                        id={video.link}
                         title={video.title}
                         image={video.img}
                         video={video.link}
@@ -183,6 +186,7 @@ export default class VideoList extends Component {
                   {videoList.meeting.map(video => (
                     <Box key={video.link + video.title} width={[1, 1 / 2]}>
                       <Player
+                        id={video.link}
                         title={video.title}
                         image={video.img}
                         video={video.link}
@@ -249,6 +253,7 @@ export default class VideoList extends Component {
                   {videoList.talk.map(video => (
                     <Box key={video.link + video.title} width={[1, 1 / 2]}>
                       <Player
+                        id={video.link}
                         title={video.title}
                         image={video.img}
                         video={video.link}

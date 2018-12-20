@@ -14,6 +14,7 @@ const Player = props => (
     onClick={props.selectVideo}
     my={3}
     mx={'auto'}
+    id={props.id}
   >
     <Text fontSize={4} fontFamily="text" lineHeight={1} fontWeight="600" mb={3}>
       {props.title}
