@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Text, Heading, Flex, Box } from 'rebass'
+import Hide from 'hidden-styled'
 // import anime from 'animejs'
 
 import FlexOver from '../Atomic/FlexOver'
@@ -53,11 +54,13 @@ export default class Header extends Component {
           />
         )}
         <HeaderBackground pb={7} pt={7} m={-2} color="white">
-          <FlexOver>
-            <Position left="1rem" top="-7rem">
-              <Blob size="300" color="gold" />
-            </Position>
-          </FlexOver>
+          <Hide xs sm md>
+            <FlexOver>
+              <Position left="1rem" top="-7rem">
+                <Blob size="300" color="gold" />
+              </Position>
+            </FlexOver>
+          </Hide>
           <Heading
             fontFamily="menu"
             textAlign="center"

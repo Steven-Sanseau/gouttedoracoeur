@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Flex, Heading, Text } from 'rebass'
+import Hide from 'hidden-styled'
 
 import Blob from '../Atomic/Blob'
 import Position from '../Atomic/Position'
@@ -10,9 +11,11 @@ const Description = () => (
       <Box width={[0.8, '80%']} mx="auto">
         <Flex flexWrap="wrap" alignItems="center" mx={-2}>
           <Box mx="auto" width={[1, 1 / 4]}>
-            <Position top="-5rem" left="8rem">
-              <Blob color="green" size="68" />
-            </Position>
+            <Hide xs sm md>
+              <Position top="-5rem" left="8rem">
+                <Blob color="green" size="68" />
+              </Position>
+            </Hide>
             <Heading fontSize={6} fontFamily="menu">
               Un décor
             </Heading>
@@ -24,9 +27,11 @@ const Description = () => (
           <Box mx="auto" mt={[4, 0]} width={[1, 1 / 4]}>
             <Heading fontSize={6} lineHeight={1.7} fontFamily="menu">
               Un
-              <Position top="-5rem" marginBottom="-7rem" left="8rem">
-                <Blob color="red" size="76" />
-              </Position>
+              <Hide xs sm md>
+                <Position top="-5rem" marginBottom="-7rem" left="8rem">
+                  <Blob color="red" size="76" />
+                </Position>
+              </Hide>
               <br />
               personnage
             </Heading>
@@ -36,12 +41,14 @@ const Description = () => (
             </Text>
           </Box>
           <Box mx="auto" mt={[5, 0]} width={[1, 1 / 4]}>
-            <Position top="-5rem" left="4rem">
-              <Blob color="blue" size="60" />
-            </Position>
-            <Position top="-3.5rem" left="7rem">
-              <Blob color="blue" size="30" />
-            </Position>
+            <Hide xs sm md>
+              <Position top="-5rem" left="4rem">
+                <Blob color="blue" size="60" />
+              </Position>
+              <Position top="-3.5rem" left="7rem">
+                <Blob color="blue" size="30" />
+              </Position>
+            </Hide>
 
             <Heading fontSize={6} lineHeight={1.3} fontFamily="menu">
               Une histoire
