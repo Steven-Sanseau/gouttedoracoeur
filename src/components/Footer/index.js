@@ -43,8 +43,6 @@ const Footer = () => (
               Vehier (graphisme) et Julie Henches (communication). <br /> <br />
               Merci à Clara Borgen et à l'atelier Pierre Pierre pour la
               <strong> réalisation de la bande-annonce</strong>.
-              <br /> <br /> Merci à Élise Prévot pour les
-              <strong> photographies de la soirée de lancement</strong>.
               <br /> <br /> Merci à Mylène Clément, Pierre Herouali et Thierry
               Gautier (TGA productions) pour leurs interventions efficaces.
               Merci aux usagers, à l'équipe des salariés, aux bénévoles, au
