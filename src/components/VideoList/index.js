@@ -206,6 +206,7 @@ export default class VideoList extends Component {
                       fontFamily="text"
                       fontWeight="700"
                       fontSize={5}
+                      lineHeight={1.5}
                     >
                       Partagez le film sur les réseaux sociaux !
                       <Text

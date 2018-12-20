@@ -73,16 +73,25 @@ const Footer = () => (
               <LinkStyled
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.accueilgouttedor.fr/adh%C3%A9rer-%C3%A0-ago/"
+                href="https://www.accueilgouttedor.fr/etre-benevole/"
               >
                 ici
               </LinkStyled>
-              . <br />
+              <Text
+                fontFamily="text"
+                fontSize={1}
+                fontWeight="400"
+                textAlign="justify"
+                lineHeight={1}
+                mb={2}
+              >
+                (Voir colonne de droite en bas du site d'Accueil Goutte d'Or)
+              </Text>
               Pour faire un don, rendez-vous{' '}
               <LinkStyled
                 target="_blank"
                 rel="noopener noreferrer"
-                href="http://facebook.com"
+                href="https://www.accueilgouttedor.fr/adhérer-à-ago/"
               >
                 ici
               </LinkStyled>
@@ -100,7 +109,7 @@ const Footer = () => (
               <LinkStyled
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.accueilgouttedor.fr/"
+                href="https://www.facebook.com/Accueil-Goutte-dOr-841385299277848/"
               >
                 ici
               </LinkStyled>

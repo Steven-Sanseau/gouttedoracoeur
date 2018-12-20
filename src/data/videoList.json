@@ -39,7 +39,7 @@
       "description": "Un enfant de la Goutte d’Or pétillant d’intelligence, partage ses rêves d’une société plus juste"
     },
     {
-      "title": "Gnoh Awa",
+      "title": "Gnoh Awa Ouattara",
       "link": "UVYi-n3KuY8",
       "img": "gnoh.jpg",
       "description": "Gnoh Awa confie le récit des épisodes douloureux de sa vie qui l’ont amenée à migrer en France et sa bataille actuellement sans succès pour faire venir auprès d’elle sa fille de 16 ans Khadidja restée en Côte d’Ivoire."
@@ -57,13 +57,13 @@
       "description": "Trésorier d’Accueil Goutte d’Or et président de la Fédération des centres sociaux de Paris, se souvient de ses débuts de bénévole au centre social où il enseigne le français. Réflexions à deux voix sur les évolutions du bénévolat dans les centres sociaux"
     },
     {
-      "title": "Abdelkader",
+      "title": "Abdelkader Ghezali",
       "link": "wW140MN5ByA",
       "img": "chibani.jpg",
-      "description": "Aujourd’hui retraité, Abdelkader évoque sa vie de «travailleur immigré», son attachement au quartier mais aussi ses inquiétudes pour l’avenir "
+      "description": "Aujourd’hui retraité, Abdelkader Ghezali évoque sa vie de «travailleur immigré», son attachement au quartier mais aussi ses inquiétudes pour l’avenir "
     },
     {
-      "title": "Ladji",
+      "title": "Ladji Sylla",
       "link": "5HevYi5ztj0",
       "img": "sylla.jpg",
       "description": "Ladji père de famille soucieux de l’avenir de ses enfants, expose sa conception de l’éducation et plus largement de la famille"
@@ -83,16 +83,16 @@
       "description": "Maire du 18ème arrondissement de Paris"
     },
     {
-      "title": "Maguy, bénévole",
+      "title": "Maguy Benisty, bénévole",
       "link": "nmcdk0c73p0",
       "img": "maguy.jpg",
       "description": ""
     },
     {
-      "title": "Fatoumata",
+      "title": "Fatoumata Sissoko",
       "link": "wv_aM62OS1k",
       "img": "discours_fatoumata.jpg",
-      "description": ""
+      "description": "Fondatrice de l'association SIFAD"
     },
     {
       "title": "Colombe Brossel",
@@ -104,6 +104,12 @@
       "title": "L’intégralité du discours de Christine",
       "link": "RKxYUI-uA7I",
       "img": "christine.jpg",
+      "description": ""
+    },
+    {
+      "title": "Fatou Gassama",
+      "link": "hGLxshKmRWM",
+      "img": "fatou.jpg",
       "description": ""
     }
   ]
