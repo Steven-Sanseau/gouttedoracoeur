@@ -51,6 +51,11 @@ export default class FullScreen extends Component {
       width: window.innerWidth - 30,
       playerVars: {
         autoplay: 1,
+        cc_load_policy: 0,
+        iv_load_policy: 3,
+        modestbranding: 1,
+        rel: 0,
+        showinfo: 0,
       },
     }
     return (
