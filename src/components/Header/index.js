@@ -5,7 +5,6 @@ import { navigate, Link } from 'gatsby'
 import Hide from 'hidden-styled'
 
 import DownSvg from '-!svg-react-loader?name=DownSvg!../../assets/Down.svg'
-import BonusSvg from '-!svg-react-loader?name=BonusSvg!../../assets/Bonus.svg'
 
 import FlexOver from '../Atomic/FlexOver'
 import Blob from '../Atomic/Blob'
@@ -15,10 +14,6 @@ import HeaderBackground from './HeaderBackground'
 import FullScreen from './FullScreen'
 
 const Down = styled(DownSvg)`
-  width: 1.5rem;
-  height: 1.5rem;
-`
-const Bonus = styled(BonusSvg)`
   width: 1.5rem;
   height: 1.5rem;
 `

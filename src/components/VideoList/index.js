@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { navigate, Link } from 'gatsby'
+import { navigate } from 'gatsby'
 import { themeGet } from 'styled-system'
 import { Flex, Box, Heading, Text, Card } from 'rebass'
 import Hide from 'hidden-styled'
