@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import { Text, Heading, Flex, Box } from 'rebass'
-import { navigate } from 'gatsby'
+import styled from 'styled-components'
+import { navigate, Link } from 'gatsby'
 import Hide from 'hidden-styled'
+
+import DownSvg from '-!svg-react-loader?name=DownSvg!../../assets/Down.svg'
+import BonusSvg from '-!svg-react-loader?name=BonusSvg!../../assets/Bonus.svg'
 
 import FlexOver from '../Atomic/FlexOver'
 import Blob from '../Atomic/Blob'
@@ -9,6 +13,15 @@ import Position from '../Atomic/Position'
 import PlayButton from '../Atomic/PlayButton'
 import HeaderBackground from './HeaderBackground'
 import FullScreen from './FullScreen'
+
+const Down = styled(DownSvg)`
+  width: 1.5rem;
+  height: 1.5rem;
+`
+const Bonus = styled(BonusSvg)`
+  width: 1.5rem;
+  height: 1.5rem;
+`
 
 export default class Header extends Component {
   constructor(props) {
@@ -49,7 +62,7 @@ export default class Header extends Component {
             onClose={this.closeFullscreenMode}
           />
         )}
-        <HeaderBackground pb={[7]} pt={[3, 7]} m={-2} color="white">
+        <HeaderBackground pb={[6]} pt={[3, 7]} m={-2} color="white">
           <Hide xs sm md>
             <FlexOver>
               <Position left="1rem" top="-7rem">
@@ -70,7 +83,7 @@ export default class Header extends Component {
             fontFamily="text"
             fontWeight="700"
             textAlign="center"
-            fontSize={3}
+            fontSize={5}
             css={{ letterSpacing: -0.45 }}
             py={3}
           >
@@ -97,7 +110,6 @@ export default class Header extends Component {
           >
             2018
           </Text>
-          {/* {!fullscreenMode && ( */}
           <Flex>
             <Box mx="auto">
               <PlayButton
@@ -112,7 +124,20 @@ export default class Header extends Component {
               />
             </Box>
           </Flex>
-          {/* )} */}
+          <Link to="#bonus" css={{ textDecoration: 'none' }}>
+            <Text
+              fontFamily="text"
+              fontWeight="700"
+              textAlign={['center', 'right']}
+              fontSize={5}
+              mt={[4, 1]}
+              pr={[2, 4]}
+              color="white"
+              lineHeight={1}
+            >
+              <Down /> Voir les bonus
+            </Text>
+          </Link>
         </HeaderBackground>
       </div>
     )
