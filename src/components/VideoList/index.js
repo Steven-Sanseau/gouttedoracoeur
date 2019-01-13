@@ -320,13 +320,13 @@ export default class VideoList extends Component {
                 mb={2}
               >
                 En 2005, Daniel Bouy filme pendant 6 mois les premiers cours de
-                français dispensés par une enseignante, Marion Aguilar, auprès
-                de jeunes «primo-arrivants» au centre social Espace Torcy dans
-                le 18 ème arrondissement de Paris. Ce documentaire (56 minutes),
-                monté par Nathalie Perrin, a reçu en 2009 le prix du jury Jeune
-                du Festival du film d’éducation et a été sélectionné la même
-                année au FIGRA (Festival international du grand reportage
-                d’actualité).
+                français dispensés par une formatrice, Marion Aguilar, auprès de
+                jeunes étrangers «primo-arrivants» au centre social Espace Torcy
+                dans le 18 ème arrondissement de Paris. Ce documentaire (56
+                minutes), monté par Nathalie Perrin, a reçu en 2009 le prix du
+                jury Jeune du Festival du film d’éducation et a été sélectionné
+                la même année au FIGRA (Festival international du grand
+                reportage d’actualité).
                 <br />
               </Text>
               <LinkStyled
