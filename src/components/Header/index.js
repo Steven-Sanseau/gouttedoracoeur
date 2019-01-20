@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, Heading, Flex, Box } from 'rebass'
+import { Text, Heading, Flex, Box, Card } from 'rebass'
 import styled from 'styled-components'
 import { navigate, Link } from 'gatsby'
 import Hide from 'hidden-styled'
@@ -120,18 +120,26 @@ export default class Header extends Component {
             </Box>
           </Flex>
           <Link to="#bonus" css={{ textDecoration: 'none' }}>
-            <Text
-              fontFamily="text"
-              fontWeight="700"
-              textAlign={['center', 'right']}
-              fontSize={5}
-              mt={[4, 1]}
-              pr={[2, 4]}
-              color="white"
-              lineHeight={1}
+            <Card
+              bg="white"
+              borderRadius={3}
+              width={1 / 6}
+              mt={5}
+              p={2}
+              mx="auto"
+              radius={2}
             >
-              <Down /> Voir les bonus
-            </Text>
+              <Text
+                fontFamily="text"
+                fontWeight="700"
+                textAlign={'center'}
+                fontSize={5}
+                color="black"
+                lineHeight={1.4}
+              >
+                <Down /> Voir les bonus
+              </Text>
+            </Card>
           </Link>
         </HeaderBackground>
       </div>

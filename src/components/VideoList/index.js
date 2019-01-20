@@ -202,6 +202,55 @@ export default class VideoList extends Component {
                       />
                     </Box>
                   ))}
+
+                  <Card
+                    mx="auto"
+                    bg="white"
+                    width={[0.9, 1 / 2]}
+                    my={5}
+                    borderRadius={[30, 50]}
+                    pt={[2, 4]}
+                    pb={[2, 3]}
+                    px={[3, 5, 6]}
+                  >
+                    <Heading
+                      textAlign="center"
+                      fontFamily="menu"
+                      fontWeight="900"
+                      fontSize={[5]}
+                      css={{ letterSpacing: -1.25 }}
+                      mb={4}
+                      lineHeight={1}
+                    >
+                      En bonus, le documentaire «Je veux apprendre la France»
+                    </Heading>
+                    <Text
+                      textAlign="justify"
+                      fontFamily="text"
+                      fontWeight="400"
+                      fontSize={3}
+                      lineHeight="25px"
+                      mb={2}
+                    >
+                      En 2005, Daniel Bouy filme pendant 6 mois les premiers
+                      cours de français dispensés par une formatrice, Marion
+                      Aguilar, auprès de jeunes étrangers «primo-arrivants» au
+                      centre social Espace Torcy dans le 18 ème arrondissement
+                      de Paris. Ce documentaire (56 minutes), monté par Nathalie
+                      Perrin, a reçu en 2009 le prix du jury Jeune du Festival
+                      du film d’éducation et a été sélectionné la même année au
+                      FIGRA (Festival international du grand reportage
+                      d’actualité).
+                      <br />
+                    </Text>
+                    <LinkStyled
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.youtube.com/watch?v=42sjtq6D5M0"
+                    >
+                      >> Voir le documentaire
+                    </LinkStyled>
+                  </Card>
                   <Card
                     mx="auto"
                     bg="white"
@@ -290,53 +339,6 @@ export default class VideoList extends Component {
                 </Box>
               </Flex>
             )}
-            <Card
-              mx="auto"
-              bg="white"
-              width={[0.9, 8 / 9]}
-              my={5}
-              borderRadius={[30, 50]}
-              pt={[2, 4]}
-              pb={[2, 3]}
-              px={[3, 5, 6]}
-            >
-              <Heading
-                textAlign="center"
-                fontFamily="menu"
-                fontWeight="900"
-                fontSize={[5]}
-                css={{ letterSpacing: -1.25 }}
-                mb={4}
-                lineHeight={1}
-              >
-                En bonus, le documentaire «Je veux apprendre la France»
-              </Heading>
-              <Text
-                textAlign="justify"
-                fontFamily="text"
-                fontWeight="400"
-                fontSize={3}
-                lineHeight="25px"
-                mb={2}
-              >
-                En 2005, Daniel Bouy filme pendant 6 mois les premiers cours de
-                français dispensés par une formatrice, Marion Aguilar, auprès de
-                jeunes étrangers «primo-arrivants» au centre social Espace Torcy
-                dans le 18 ème arrondissement de Paris. Ce documentaire (56
-                minutes), monté par Nathalie Perrin, a reçu en 2009 le prix du
-                jury Jeune du Festival du film d’éducation et a été sélectionné
-                la même année au FIGRA (Festival international du grand
-                reportage d’actualité).
-                <br />
-              </Text>
-              <LinkStyled
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=42sjtq6D5M0"
-              >
-                >> Voir le documentaire
-              </LinkStyled>
-            </Card>
           </Box>
           <Hide xs sm md>
             <Position top="20rem" left="-10rem">
