@@ -123,7 +123,7 @@ export default class Header extends Component {
             <Card
               bg="white"
               borderRadius={3}
-              width={1 / 6}
+              width={[0.9, 1 / 6]}
               mt={5}
               p={2}
               mx="auto"
