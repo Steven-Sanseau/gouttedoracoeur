@@ -217,12 +217,13 @@ export default class VideoList extends Component {
                       textAlign="center"
                       fontFamily="menu"
                       fontWeight="900"
-                      fontSize={[5]}
+                      fontSize={[4, 5]}
                       css={{ letterSpacing: -1.25 }}
                       mb={4}
                       lineHeight={1}
                     >
-                      En bonus, le documentaire «Je veux apprendre la France»
+                      En bonus, le documentaire <br />
+                      «Je veux apprendre la France»
                     </Heading>
                     <Text
                       textAlign="justify"
