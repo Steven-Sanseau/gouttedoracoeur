@@ -74,7 +74,7 @@ export default class FullScreen extends Component {
             <Flex>
               <Box mx="auto">
                 <YouTube
-                  videoId={'Nv6dJyANgsI'}
+                  videoId={'jTwsZV6pn5I'}
                   opts={optionsYoutubePlayer}
                   onReady={this.play}
                   onEnd={this.props.onClose}
